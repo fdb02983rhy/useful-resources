@@ -7,35 +7,12 @@ The unit of storage is a **resource**: one submitted URL, file, image, repositor
 playlist, folder, or collection becomes one Markdown note. Collections stay whole
 unless their submission explicitly asks for a breakdown.
 
-## Resources
-
-| Resource | Kind | Topics |
-| --- | --- | --- |
-| [Ilya 30u30](resources/artificial-intelligence/ilya-30u30.md) | Collection | AI, deep learning |
-| [L8 Principal's Agentic Engineering Workflow](resources/agentic-engineering/l8-principals-agentic-engineering-workflow.md) | Video | Agentic engineering |
-| [git push no-mistakes](resources/agentic-engineering/no-mistakes.md) | Tool | Agentic engineering, developer tools |
-| [cmux](resources/agentic-engineering/cmux.md) | Tool | Agentic engineering, developer tools |
-| [Warp](resources/agentic-engineering/warp.md) | Tool | Agentic engineering, developer tools |
-| [Grill Me](resources/agentic-engineering/grill-me.md) | Tool | Agentic engineering, agent skills |
-| [Grill with Docs](resources/agentic-engineering/grill-with-docs.md) | Tool | Agentic engineering, agent skills |
-| [Ponytail](resources/agentic-engineering/ponytail.md) | Tool | Agentic engineering, agent skills, developer tools |
-| [AI Agent Workshop Tokyo 2026, Part 1: Agentic RL](resources/agentic-engineering/agentic-rl-workshop-part-1.md) | Note | Agentic engineering, reinforcement learning |
-| [AI Agent Workshop Tokyo — AI Agent Auto Improvement](resources/agentic-engineering/ai-agent-workshop-tokyo-auto-improvement.md) | Note | Agentic engineering, agent evaluation |
-| [The Smol Training Playbook](resources/deep-learning/smol-training-playbook.md) | Web | Deep learning, model training |
-| [The LLM Evaluation Guidebook](resources/model-evaluation/llm-evaluation-guidebook.md) | Web | Model evaluation |
-| [Let's reproduce GPT-2 (124M)](resources/deep-learning/lets-reproduce-gpt-2-124m.md) | Video | Deep learning, model training |
-| [Database Design Course](resources/databases/database-design-course.md) | Video | Databases |
-| [Inside OpenAI's in-house data agent](resources/agentic-engineering/inside-openais-in-house-data-agent.md) | Article | Agentic engineering, agent evaluation |
-| [Demystifying evals for AI agents](resources/agentic-engineering/demystifying-evals-for-ai-agents.md) | Article | Agentic engineering, agent evaluation |
-| [Agentic Design Patterns](resources/agentic-engineering/agentic-design-patterns.md) | Repository | Agentic engineering |
-| [The Hitchhiker's Guide to Agentic AI](resources/agentic-engineering/hitchhikers-guide-to-agentic-ai.md) | Paper | Agentic engineering, reinforcement learning, model training, model evaluation |
-
 ## Workflow
 
 1. Send a URL, image, file, repository, or rough note.
 2. The source is inspected and checked for an existing canonical URL.
 3. One note is created or updated under `resources/<primary-topic>/`.
-4. This index and the generated frontend data are updated.
+4. The generated frontend data is updated.
 5. `python3 scripts/validate.py` checks the repository before commit.
 
 ## Layout

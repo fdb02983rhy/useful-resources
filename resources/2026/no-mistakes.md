@@ -4,6 +4,7 @@ title: git push no-mistakes
 kind: tool
 source_url: https://github.com/kunchenguid/no-mistakes
 added: 2026-08-08
+status: reference
 topics: [agentic-engineering, developer-tools]
 ---
 

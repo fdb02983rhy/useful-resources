@@ -4,6 +4,7 @@ title: "L8 Principal's Agentic Engineering Workflow"
 kind: video
 source_url: https://www.youtube.com/watch?v=iQyg-KypKAA
 added: 2026-08-08
+status: reference
 topics: [agentic-engineering]
 ---
 

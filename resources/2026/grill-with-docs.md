@@ -4,6 +4,7 @@ title: Grill with Docs
 kind: tool
 source_url: https://github.com/mattpocock/skills/tree/main/skills/engineering/grill-with-docs
 added: 2026-08-08
+status: reference
 topics: [agentic-engineering, agent-skills]
 ---
 

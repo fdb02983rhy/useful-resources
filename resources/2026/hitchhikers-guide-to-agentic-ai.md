@@ -4,6 +4,7 @@ title: "The Hitchhiker's Guide to Agentic AI: From Foundations to Systems"
 kind: paper
 source_url: https://arxiv.org/abs/2606.24937
 added: 2026-08-08
+status: reference
 topics: [agentic-engineering, reinforcement-learning, model-training, model-evaluation]
 ---
 

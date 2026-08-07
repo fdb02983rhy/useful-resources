@@ -4,6 +4,7 @@ title: Demystifying evals for AI agents
 kind: article
 source_url: https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents
 added: 2026-08-08
+status: reference
 topics: [agentic-engineering, agent-evaluation]
 ---
 

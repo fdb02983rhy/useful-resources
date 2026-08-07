@@ -4,6 +4,7 @@ title: Database Design Course
 kind: video
 source_url: https://www.youtube.com/watch?v=ztHopE5Wnpc
 added: 2026-08-08
+status: reference
 topics: [databases]
 ---
 

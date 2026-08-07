@@ -4,6 +4,7 @@ title: "Let's reproduce GPT-2 (124M)"
 kind: video
 source_url: https://www.youtube.com/watch?v=l8pRSuU81PU&ab_channel=AndrejKarpathy
 added: 2026-08-08
+status: reference
 topics: [deep-learning, model-training]
 ---
 

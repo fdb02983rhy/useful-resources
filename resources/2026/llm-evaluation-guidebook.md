@@ -4,6 +4,7 @@ title: The LLM Evaluation Guidebook
 kind: web
 source_url: https://huggingface.co/spaces/OpenEvals/evaluation-guidebook
 added: 2026-08-08
+status: reference
 topics: [model-evaluation]
 ---
 

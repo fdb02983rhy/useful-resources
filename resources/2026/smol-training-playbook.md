@@ -4,6 +4,7 @@ title: "The Smol Training Playbook: The Secrets to Building World-Class LLMs"
 kind: web
 source_url: https://huggingface.co/spaces/HuggingFaceTB/smol-training-playbook
 added: 2026-08-08
+status: reference
 topics: [deep-learning, model-training]
 ---
 

@@ -4,6 +4,7 @@ title: Replace with title
 kind: web
 source_url: https://example.com/
 added: YYYY-MM-DD
+status: reference
 topics: [replace-with-topic]
 ---
 

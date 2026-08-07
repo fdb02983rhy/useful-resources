@@ -4,6 +4,7 @@ title: cmux
 kind: tool
 source_url: https://cmux.com/
 added: 2026-08-08
+status: reference
 topics: [agentic-engineering, developer-tools]
 ---
 

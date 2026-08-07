@@ -4,6 +4,7 @@ title: "Agentic Design Patterns: A Hands-On Guide to Building Intelligent System
 kind: repository
 source_url: https://github.com/evoiz/Agentic-Design-Patterns
 added: 2026-08-08
+status: reference
 topics: [agentic-engineering]
 ---
 

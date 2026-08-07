@@ -4,6 +4,7 @@ title: Ponytail
 kind: tool
 source_url: https://github.com/dietrichgebert/ponytail
 added: 2026-08-08
+status: reference
 topics: [agentic-engineering, agent-skills, developer-tools]
 ---
 

@@ -4,6 +4,7 @@ title: Inside OpenAI's in-house data agent
 kind: article
 source_url: https://openai.com/index/inside-our-in-house-data-agent/
 added: 2026-08-08
+status: reference
 topics: [agentic-engineering, agent-evaluation]
 ---
 

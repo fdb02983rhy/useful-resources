@@ -10,13 +10,14 @@ study resources.
   independent URLs submitted together as separate resources.
 - Update an existing note when its canonical URL matches; do not duplicate it.
 - Store notes at `resources/<added-year>/<lowercase-ascii-slug>.md` with `id`,
-  `title`, `kind`, `source_url`, `added`, and `topics` frontmatter. Preserve the
-  submitted URL. Use a kind accepted by `scripts/validate.py`.
+  `title`, `kind`, `source_url`, `added`, `status`, and `topics` frontmatter.
+  Use `status: reference`, preserve the submitted URL, and use a kind accepted by
+  `scripts/validate.py`.
 
 ## Notes
 
-- Summarize the whole resource concisely. Record why it is useful, key notes, and
-  open questions. Separate source claims from editor synthesis.
+- Summarize the whole resource concisely. Record why it is useful and key notes.
+  Separate source claims from editor synthesis.
 - Never invent quotations, timestamps, page numbers, authors, results, or dates.
   Say when the source could not be retrieved. Do not copy full copyrighted works.
 - YouTube: use captions when available and cite only verified timestamps.

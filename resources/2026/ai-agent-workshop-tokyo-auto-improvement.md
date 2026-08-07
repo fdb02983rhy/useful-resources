@@ -4,6 +4,7 @@ title: AI Agent Workshop Tokyo — AI Agent Auto Improvement
 kind: note
 source_url: https://wandb.ai/site/resources/events/ai-agent-workshop-tokyo/
 added: 2026-08-08
+status: reference
 topics: [agentic-engineering, agent-evaluation]
 ---
 

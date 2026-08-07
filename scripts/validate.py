@@ -19,6 +19,7 @@ REQUIRED_FIELDS = {
     "kind",
     "source_url",
     "added",
+    "status",
     "topics",
 }
 ALLOWED_KINDS = {
@@ -135,6 +136,9 @@ def validate_resources() -> list[str]:
             date.fromisoformat(data["added"])
         except ValueError:
             errors.append(f"{relative}: added must use YYYY-MM-DD")
+
+        if data["status"] != "reference":
+            errors.append(f"{relative}: status must be 'reference'")
 
         parsed_url = urlsplit(data["source_url"])
         if parsed_url.scheme not in {"http", "https"} or not parsed_url.netloc:

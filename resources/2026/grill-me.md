@@ -4,6 +4,7 @@ title: Grill Me
 kind: tool
 source_url: https://github.com/mattpocock/skills/tree/main/skills/productivity/grill-me
 added: 2026-08-08
+status: reference
 topics: [agentic-engineering, agent-skills]
 ---
 

@@ -4,6 +4,7 @@ title: "AI Agent Workshop Tokyo 2026, Part 1: Agentic RL"
 kind: note
 source_url: https://github.com/nejumi/art-e-nano
 added: 2026-08-08
+status: reference
 topics: [agentic-engineering, reinforcement-learning]
 ---
 

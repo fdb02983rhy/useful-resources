@@ -4,6 +4,7 @@ title: Ilya 30u30
 kind: collection
 source_url: https://arc.net/folder/D0472A20-9C20-4D3F-B145-D2865C0A9FEE
 added: 2026-08-08
+status: reference
 topics: [artificial-intelligence, deep-learning]
 ---
 

@@ -51,12 +51,6 @@ This is a practical checklist for both creating evaluations and reading reported
 scores skeptically. Its benchmark catalog is time-bound to late 2025 and will age;
 the guide also focuses primarily on natural language rather than other modalities.
 
-## Questions
-
-- How should the benchmark recommendations be refreshed as the listed tasks saturate?
-- What level of expert agreement is sufficient before trusting a model judge?
-- How should this methodology extend to multimodal and long-horizon agent evaluation?
-
 ## Source
 
 [Open the submitted Hugging Face Space](https://huggingface.co/spaces/OpenEvals/evaluation-guidebook) ·

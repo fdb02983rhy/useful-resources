@@ -60,12 +60,6 @@ has no provenance or statistical detail, and the IDK-penalty fix has no numerica
 before-and-after results. Dataset versioning, split construction, contamination
 controls, and several cited references are also incomplete.
 
-## Questions
-
-- How were the 96 validation questions generated and checked for contamination?
-- Does the proposed reward contract remain robust when search tools or data change?
-- Who authored the deck, and is there a versioned public release?
-
 ## Source
 
 [Open the submitted PDF](../../assets/pdfs/agentic-rl-workshop-part-1.pdf) ·

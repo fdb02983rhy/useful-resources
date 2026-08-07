@@ -79,16 +79,6 @@ The video also makes several performance and productivity claims about particula
 tools and interfaces. Those claims are the presenter's results and were not
 independently verified for this note.
 
-## Questions
-
-- Which benchmark results and evaluation methods behind the tool comparisons are
-  publicly reproducible?
-- What risk thresholds should still require line-by-line human review?
-- How should memory and skills be pruned when accumulated instructions conflict or
-  become outdated?
-- Which parts of this workflow remain effective for teams with mandatory review,
-  compliance, or change-management controls?
-
 ## Source
 
 [Watch on YouTube](https://www.youtube.com/watch?v=iQyg-KypKAA)

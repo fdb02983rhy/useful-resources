@@ -51,14 +51,6 @@ governance system around a model. The scale, adoption, and performance statement
 are OpenAI's own reports, and the described agent is an internal tool rather than a
 public product blueprint.
 
-## Questions
-
-- How are ambiguous questions, changing schemas, and incorrect institutional
-  knowledge represented in the evaluation set?
-- Which failures are caught by result comparison but missed by SQL similarity, and
-  vice versa?
-- How does the system measure whether memories remain useful as underlying data changes?
-
 ## Source
 
 [Read the OpenAI article](https://openai.com/index/inside-our-in-house-data-agent/)

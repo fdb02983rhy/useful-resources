@@ -63,15 +63,6 @@ details, hardware guidance, and quick-reference targets are snapshots from
 mid-2026. The guide deliberately focuses on text-in, text-out systems and excludes
 multimodal models, domain-specific deployments, and personalization systems.
 
-## Questions
-
-- Which operational recommendations have the strongest comparative evidence across
-  different models, harnesses, and deployment settings?
-- How will the guide version time-sensitive protocol, framework, benchmark, and
-  hardware sections without obscuring what changed?
-- Which chapters are best treated as orientation before switching to the cited
-  primary literature or official specifications?
-
 ## Source
 
 [Open the arXiv record](https://arxiv.org/abs/2606.24937) ·

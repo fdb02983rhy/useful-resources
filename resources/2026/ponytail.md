@@ -46,12 +46,6 @@ Ponytail is best understood as an anti-complexity review policy, not a demand fo
 code golf. Its value will depend on whether its simplicity bias agrees with the
 project's architecture and whether the published benchmark generalizes.
 
-## Questions
-
-- How does the policy perform across other models, languages, and larger codebases?
-- When can a strong simplicity bias hide necessary future-facing abstractions?
-- What conflicts arise when repository conventions disagree with Ponytail's ladder?
-
 ## Source
 
 [Open the repository](https://github.com/dietrichgebert/ponytail) ·

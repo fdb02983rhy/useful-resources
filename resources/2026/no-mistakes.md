@@ -46,12 +46,6 @@ The isolation and escalation boundaries are the most reusable ideas. The tradeof
 is additional local machinery, model/API cost, and a longer delivery path whose
 reliability depends on project checks and the selected agent.
 
-## Questions
-
-- What repository content reaches external agent backends during review?
-- How do latency, cost, and false positives compare with conventional hooks plus CI?
-- How much configuration is needed for projects with unusual validation commands?
-
 ## Source
 
 [Open the repository](https://github.com/kunchenguid/no-mistakes)

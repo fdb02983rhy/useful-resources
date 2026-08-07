@@ -51,12 +51,6 @@ separated from its tasks, harness, graders, and inspected traces. Anthropic also
 describes agent evaluation as a nascent discipline, so the numerical starting
 points are heuristics rather than universal requirements.
 
-## Questions
-
-- How many trials are sufficient for release decisions at different success rates?
-- How should teams continuously measure drift in model-grader agreement?
-- What graders work for long-horizon, multi-agent tasks with subjective outcomes?
-
 ## Source
 
 [Read the Anthropic article](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)

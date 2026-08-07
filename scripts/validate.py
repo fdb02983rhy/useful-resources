@@ -39,6 +39,7 @@ TRACKING_QUERY_PREFIXES = ("utm_",)
 TRACKING_QUERY_KEYS = {"fbclid", "gclid", "mc_cid", "mc_eid"}
 LINK_RE = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
 SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+IGNORED_DIRECTORIES = {".git", ".next", ".wrangler", "dist", "node_modules"}
 
 
 def parse_frontmatter(path: Path) -> tuple[dict[str, str], list[str]]:
@@ -160,7 +161,7 @@ def validate_resources() -> list[str]:
 def validate_local_links() -> list[str]:
     errors: list[str] = []
     for path in sorted(ROOT.rglob("*.md")):
-        if ".git" in path.parts:
+        if any(part in IGNORED_DIRECTORIES for part in path.parts):
             continue
         text = path.read_text(encoding="utf-8")
         for raw_target in LINK_RE.findall(text):

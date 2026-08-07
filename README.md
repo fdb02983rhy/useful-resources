@@ -13,6 +13,11 @@ unless their submission explicitly asks for a breakdown.
 | --- | --- | --- |
 | [Ilya 30u30](resources/2026/ilya-30u30.md) | Collection | AI, deep learning |
 | [L8 Principal's Agentic Engineering Workflow](resources/2026/l8-principals-agentic-engineering-workflow.md) | Video | Agentic engineering |
+| [git push no-mistakes](resources/2026/no-mistakes.md) | Tool | Agentic engineering, developer tools |
+| [cmux](resources/2026/cmux.md) | Tool | Agentic engineering, developer tools |
+| [Grill Me](resources/2026/grill-me.md) | Tool | Agentic engineering, agent skills |
+| [Grill with Docs](resources/2026/grill-with-docs.md) | Tool | Agentic engineering, agent skills |
+| [Ponytail](resources/2026/ponytail.md) | Tool | Agentic engineering, agent skills, developer tools |
 
 ## Workflow
 

@@ -11,6 +11,7 @@ unless their submission explicitly asks for a breakdown.
 | Material | Kind | Topics | Status |
 | --- | --- | --- | --- |
 | [Ilya 30u30](materials/2026/ilya-30u30.md) | Collection | AI, deep learning | Queued |
+| [L8 Principal's Agentic Engineering Workflow](materials/2026/l8-principals-agentic-engineering-workflow.md) | Video | Agentic engineering | Queued |
 
 ## Workflow
 
@@ -33,4 +34,3 @@ AGENTS.md         Durable ingestion and editing contract
 
 All notes use ordinary Markdown links and a small YAML frontmatter block, keeping
 the repository readable on GitHub and portable to other Markdown tools.
-

@@ -8,3 +8,6 @@ Resources about constructing, optimizing, and evaluating model-training runs.
 - [The Smol Training Playbook](../resources/2026/smol-training-playbook.md) — a
   practical lifecycle guide to deciding, experimenting, training, recovering,
   post-training, and evaluating at scale.
+- [The Hitchhiker's Guide to Agentic AI](../resources/2026/hitchhikers-guide-to-agentic-ai.md)
+  — a broad reference covering LLM architecture, optimization, distributed
+  systems, SFT, preference optimization, and agentic training.

@@ -27,6 +27,7 @@ unless their submission explicitly asks for a breakdown.
 | [Inside OpenAI's in-house data agent](resources/2026/inside-openais-in-house-data-agent.md) | Article | Agentic engineering, agent evaluation |
 | [Demystifying evals for AI agents](resources/2026/demystifying-evals-for-ai-agents.md) | Article | Agentic engineering, agent evaluation |
 | [Agentic Design Patterns](resources/2026/agentic-design-patterns.md) | Repository | Agentic engineering |
+| [The Hitchhiker's Guide to Agentic AI](resources/2026/hitchhikers-guide-to-agentic-ai.md) | Paper | Agentic engineering, reinforcement learning, model training, model evaluation |
 
 ## Workflow
 

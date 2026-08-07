@@ -98,6 +98,13 @@ def canonical_url(raw: str) -> str:
     return urlunsplit((scheme, host, path, urlencode(sorted(query)), ""))
 
 
+def parse_topics(raw: str) -> list[str]:
+    value = raw.strip()
+    if not value.startswith("[") or not value.endswith("]"):
+        return []
+    return [topic.strip() for topic in value[1:-1].split(",") if topic.strip()]
+
+
 def validate_resources() -> list[str]:
     errors: list[str] = []
     seen_ids: dict[str, Path] = {}
@@ -122,6 +129,24 @@ def validate_resources() -> list[str]:
             errors.append(f"{relative}: id must be a lowercase hyphenated slug")
         if path.stem != resource_id:
             errors.append(f"{relative}: filename must match id '{resource_id}'")
+
+        resource_parts = path.relative_to(RESOURCES).parts
+        topics = parse_topics(data["topics"])
+        if not topics or any(not SLUG_RE.fullmatch(topic) for topic in topics):
+            errors.append(
+                f"{relative}: topics must be a bracketed list of lowercase slugs"
+            )
+        elif len(set(topics)) != len(topics):
+            errors.append(f"{relative}: topics must not contain duplicates")
+
+        if len(resource_parts) != 2:
+            errors.append(
+                f"{relative}: resource must be stored at resources/<primary-topic>/<id>.md"
+            )
+        elif topics and resource_parts[0] != topics[0]:
+            errors.append(
+                f"{relative}: folder must match primary topic '{topics[0]}'"
+            )
 
         previous_id = seen_ids.get(resource_id)
         if previous_id:

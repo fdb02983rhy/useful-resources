@@ -415,5 +415,29 @@ export const resources: Resource[] = [
       "Ablations should be fast but discriminative, change one variable at a time, keep parameter counts comparable, and validate promising proxy results at a larger or more production-like scale.",
       "Post-training begins by defining evaluations, then iterates through supervised fine-tuning, preference optimization, and, where useful, on-policy reinforcement learning."
     ]
+  },
+  {
+    "id": "warp",
+    "title": "Warp",
+    "kind": "tool",
+    "sourceUrl": "https://www.warp.dev/",
+    "added": "2026-08-08",
+    "status": "reference",
+    "topics": [
+      "agentic-engineering",
+      "developer-tools"
+    ],
+    "summary": "A cross-platform agentic development environment built around a modern terminal. Warp combines a block-based command interface, code editing and review, built-in local and cloud agents powered by Oz, and enhanced interfaces for third-party CLI agents. Its client is open source, while its hosted AI and orchestration services use Warp's separate cloud platform.",
+    "whySaved": [
+      "Brings terminal commands, agent conversations, code diffs, and reviews into one interface.",
+      "Provides a control surface for running and monitoring several local or cloud agents.",
+      "Enhances third-party CLI agents such as Claude Code, Codex, and OpenCode without requiring a switch to a conventional IDE."
+    ],
+    "highlights": [
+      "Warp offers terminal and agent modes, block-based command navigation, multiline editing, syntax highlighting, completions, a file tree, LSP-assisted editing, and interactive code review.",
+      "Local agents can run terminal commands, edit code, use attached files, images, URLs, and selections, consult MCP servers and shared context, and surface task lists and diffs for review.",
+      "Oz extends the model to programmable cloud agents that can run concurrently from triggers, schedules, integrations, an SDK, or a CLI, with activity tracking and auditability.",
+      "Warp supports macOS, Windows, and Linux on both x86-64 and ARM64 where documented."
+    ]
   }
 ];

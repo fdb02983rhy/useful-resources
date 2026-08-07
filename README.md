@@ -51,3 +51,9 @@ AGENTS.md         Durable ingestion and editing contract
 
 All notes use ordinary Markdown links and a small YAML frontmatter block, keeping
 the repository readable on GitHub and portable to other Markdown tools.
+
+## Frontend
+
+The searchable frontend lives under [`site/`](site/). It supports full-text
+search, format and topic filters, sorting, and expanded note details. Run
+`npm --prefix site run sync` after resource notes change to refresh its generated data.

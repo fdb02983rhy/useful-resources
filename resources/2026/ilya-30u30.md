@@ -4,8 +4,6 @@ title: Ilya 30u30
 kind: collection
 source_url: https://arc.net/folder/D0472A20-9C20-4D3F-B145-D2865C0A9FEE
 added: 2026-08-08
-retrieved_at: 2026-08-08
-status: queued
 topics: [artificial-intelligence, deep-learning]
 ---
 
@@ -19,7 +17,8 @@ recurrent networks, attention, transformers, memory and relational reasoning,
 scaling, and machine intelligence.
 
 The folder currently presents 27 linked resources. It is intentionally tracked
-here as **one study material**; the individual links are not separate records.
+here as **one collection resource**; the individual links are not separate
+records.
 
 ## Provenance
 
@@ -33,10 +32,10 @@ attribution to Ilya Sutskever is not treated as verified in this note.
 - Connects theoretical ideas such as description length and complexity with
   influential neural-network architectures.
 
-## Study notes
+## Notes
 
-_Add notes about the collection as a whole here. Do not create child material
-records unless a later request explicitly asks to break the collection down._
+_Add notes about the collection as a whole here. Do not create child resource
+notes unless a later request explicitly asks to break the collection down._
 
 ## Questions
 
@@ -47,4 +46,3 @@ records unless a later request explicitly asks to break the collection down._
 ## Source
 
 [Open the Arc folder](https://arc.net/folder/D0472A20-9C20-4D3F-B145-D2865C0A9FEE)
-

@@ -4,8 +4,6 @@ title: "L8 Principal's Agentic Engineering Workflow"
 kind: video
 source_url: https://www.youtube.com/watch?v=iQyg-KypKAA
 added: 2026-08-08
-retrieved_at: 2026-08-08
-status: queued
 topics: [agentic-engineering]
 ---
 
@@ -31,7 +29,7 @@ verification loop, then apply judgment to evidence, risk, and product impact.
 - A useful reference for deciding what should remain human-led as agent throughput
   increases.
 
-## Study notes
+## Notes
 
 ### Source claims
 
@@ -95,7 +93,7 @@ independently verified for this note.
 
 [Watch on YouTube](https://www.youtube.com/watch?v=iQyg-KypKAA)
 
-Retrieved on 2026-08-08 using the manually created English caption track. The
-source metadata identifies the channel as Kun Chen, a publication date of
-2026-06-20, and 18 authored chapters. The captions contain occasional recognition
-errors, so uncertain proper nouns and wording were not treated as quotations.
+Inspected using the manually created English caption track. The source metadata
+identifies the channel as Kun Chen, a publication date of 2026-06-20, and 18
+authored chapters. The captions contain occasional recognition errors, so
+uncertain proper nouns and wording were not treated as quotations.

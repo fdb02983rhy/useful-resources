@@ -1,7 +1,6 @@
 # Deep learning
 
-Materials about neural-network theory, architectures, training, and scaling.
+Resources about neural-network theory, architectures, training, and scaling.
 
-- [Ilya 30u30](../materials/2026/ilya-30u30.md) — one collection spanning
+- [Ilya 30u30](../resources/2026/ilya-30u30.md) — one collection spanning
   complexity, CNNs, RNNs, attention, transformers, memory, and scaling.
-

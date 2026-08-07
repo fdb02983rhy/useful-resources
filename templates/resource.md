@@ -4,8 +4,6 @@ title: Replace with title
 kind: web
 source_url: https://example.com/
 added: YYYY-MM-DD
-retrieved_at: YYYY-MM-DD
-status: queued
 topics: [replace-with-topic]
 ---
 
@@ -13,13 +11,13 @@ topics: [replace-with-topic]
 
 ## Summary
 
-Summarize the submitted material as a whole.
+Summarize the submitted resource as a whole.
 
 ## Why this was saved
 
-- Record its expected study value.
+- Record why it is useful or worth revisiting.
 
-## Study notes
+## Notes
 
 Add sourced observations and clearly marked synthesis.
 
@@ -29,5 +27,4 @@ Add sourced observations and clearly marked synthesis.
 
 ## Source
 
-[Open the original material](https://example.com/)
-
+[Open the original resource](https://example.com/)

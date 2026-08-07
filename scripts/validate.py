@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate Study Vault metadata, identities, and local Markdown links."""
+"""Validate Useful Resources metadata, identities, and local Markdown links."""
 
 from __future__ import annotations
 
@@ -11,7 +11,7 @@ from urllib.parse import parse_qsl, unquote, urlencode, urlsplit, urlunsplit
 
 
 ROOT = Path(__file__).resolve().parents[1]
-MATERIALS = ROOT / "materials"
+RESOURCES = ROOT / "resources"
 
 REQUIRED_FIELDS = {
     "id",
@@ -19,8 +19,6 @@ REQUIRED_FIELDS = {
     "kind",
     "source_url",
     "added",
-    "retrieved_at",
-    "status",
     "topics",
 }
 ALLOWED_KINDS = {
@@ -32,10 +30,10 @@ ALLOWED_KINDS = {
     "note",
     "paper",
     "repository",
+    "tool",
     "video",
     "web",
 }
-ALLOWED_STATUSES = {"queued", "studying", "completed", "reference"}
 TRACKING_QUERY_PREFIXES = ("utm_",)
 TRACKING_QUERY_KEYS = {"fbclid", "gclid", "mc_cid", "mc_eid"}
 LINK_RE = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
@@ -98,16 +96,16 @@ def canonical_url(raw: str) -> str:
     return urlunsplit((scheme, host, path, urlencode(sorted(query)), ""))
 
 
-def validate_materials() -> list[str]:
+def validate_resources() -> list[str]:
     errors: list[str] = []
     seen_ids: dict[str, Path] = {}
     seen_urls: dict[str, Path] = {}
-    material_paths = sorted(MATERIALS.rglob("*.md"))
+    resource_paths = sorted(RESOURCES.rglob("*.md"))
 
-    if not material_paths:
-        return ["materials/: no material notes found"]
+    if not resource_paths:
+        return ["resources/: no resource notes found"]
 
-    for path in material_paths:
+    for path in resource_paths:
         relative = path.relative_to(ROOT)
         data, parse_errors = parse_frontmatter(path)
         errors.extend(f"{relative}: {message}" for message in parse_errors)
@@ -117,30 +115,26 @@ def validate_materials() -> list[str]:
             errors.append(f"{relative}: missing fields: {', '.join(missing)}")
             continue
 
-        material_id = data["id"]
-        if not SLUG_RE.fullmatch(material_id):
+        resource_id = data["id"]
+        if not SLUG_RE.fullmatch(resource_id):
             errors.append(f"{relative}: id must be a lowercase hyphenated slug")
-        if path.stem != material_id:
-            errors.append(f"{relative}: filename must match id '{material_id}'")
+        if path.stem != resource_id:
+            errors.append(f"{relative}: filename must match id '{resource_id}'")
 
-        previous_id = seen_ids.get(material_id)
+        previous_id = seen_ids.get(resource_id)
         if previous_id:
             errors.append(
                 f"{relative}: duplicate id also used by {previous_id.relative_to(ROOT)}"
             )
         else:
-            seen_ids[material_id] = path
+            seen_ids[resource_id] = path
 
         if data["kind"] not in ALLOWED_KINDS:
             errors.append(f"{relative}: unsupported kind '{data['kind']}'")
-        if data["status"] not in ALLOWED_STATUSES:
-            errors.append(f"{relative}: unsupported status '{data['status']}'")
-
-        for field in ("added", "retrieved_at"):
-            try:
-                date.fromisoformat(data[field])
-            except ValueError:
-                errors.append(f"{relative}: {field} must use YYYY-MM-DD")
+        try:
+            date.fromisoformat(data["added"])
+        except ValueError:
+            errors.append(f"{relative}: added must use YYYY-MM-DD")
 
         parsed_url = urlsplit(data["source_url"])
         if parsed_url.scheme not in {"http", "https"} or not parsed_url.netloc:
@@ -186,18 +180,17 @@ def validate_local_links() -> list[str]:
 
 
 def main() -> int:
-    errors = validate_materials() + validate_local_links()
+    errors = validate_resources() + validate_local_links()
     if errors:
-        print("Study Vault validation failed:")
+        print("Useful Resources validation failed:")
         for error in errors:
             print(f"- {error}")
         return 1
 
-    material_count = len(list(MATERIALS.rglob("*.md")))
-    print(f"Study Vault validation passed ({material_count} material(s)).")
+    resource_count = len(list(RESOURCES.rglob("*.md")))
+    print(f"Useful Resources validation passed ({resource_count} resource(s)).")
     return 0
 
 
 if __name__ == "__main__":
     sys.exit(main())
-

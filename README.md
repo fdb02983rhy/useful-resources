@@ -43,6 +43,7 @@ unless their submission explicitly asks for a breakdown.
 resources/        One note per submitted resource
 topics/           Lightweight navigation across resources
 assets/images/    Images that belong to resource notes
+assets/pdfs/      Submitted PDFs stored with explicit permission
 templates/        Note templates
 scripts/          Deterministic repository checks
 AGENTS.md         Durable ingestion and editing contract

@@ -68,12 +68,14 @@ controls, and several cited references are also incomplete.
 
 ## Source
 
+[Open the submitted PDF](../../assets/pdfs/agentic-rl-workshop-part-1.pdf) ·
 [Open the workshop's embedded companion repository](https://github.com/nejumi/art-e-nano)
 
 The inspected local deck is titled “AI AGENT WORKSHOP TOKYO 2026 — 第一部 —
 Agentic RLの基礎からハンズオン,” with the subtitle “OpenPipe ART × W&B Training ×
 Weave で、メール検索エージェントを強化学習する.” No author, public deck URL,
-version, or redistribution license was visible. The companion repository is the
-only public link embedded in the deck and should not be mistaken for a deck download.
+version, or source-provided redistribution license was visible. The submitted copy
+is stored here with the submitter's explicit permission. The companion repository
+is the only public link embedded in the deck and is not the source of the PDF.
 The inspected file's SHA-256 is
 `641fe062e4cf914fb2f2394bb622a5df90544b7dd47147fbb9577ca664904666`.

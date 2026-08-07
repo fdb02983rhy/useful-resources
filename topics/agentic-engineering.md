@@ -31,3 +31,6 @@ performed with AI agents.
 - [Agentic Design Patterns](../resources/2026/agentic-design-patterns.md) — a broad
   pattern taxonomy paired with many third-party notebook examples, with provenance
   and reproducibility cautions.
+- [The Hitchhiker's Guide to Agentic AI](../resources/2026/hitchhikers-guide-to-agentic-ai.md)
+  — a book-length map from model and systems foundations through training,
+  evaluation, agent architecture, protocols, frameworks, and deployment.

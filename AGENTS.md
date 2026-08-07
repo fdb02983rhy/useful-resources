@@ -29,8 +29,7 @@ study resources.
 ## Finish
 
 1. Inspect `git status` and check for an existing canonical URL before editing.
-2. Update the `README.md` resource table.
-3. Refresh frontend data with `npm --prefix site run sync` when resources change.
-4. Run `python3 scripts/validate.py` and review the diff for unsupported claims or
+2. Refresh frontend data with `npm --prefix site run sync` when resources change.
+3. Run `python3 scripts/validate.py` and review the diff for unsupported claims or
    unrelated changes.
-5. Commit each ingestion request atomically. Push only when the user asks.
+4. Commit each ingestion request atomically. Push only when the user asks.

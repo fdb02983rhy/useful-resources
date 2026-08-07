@@ -15,6 +15,7 @@ unless their submission explicitly asks for a breakdown.
 | [L8 Principal's Agentic Engineering Workflow](resources/agentic-engineering/l8-principals-agentic-engineering-workflow.md) | Video | Agentic engineering |
 | [git push no-mistakes](resources/agentic-engineering/no-mistakes.md) | Tool | Agentic engineering, developer tools |
 | [cmux](resources/agentic-engineering/cmux.md) | Tool | Agentic engineering, developer tools |
+| [Warp](resources/agentic-engineering/warp.md) | Tool | Agentic engineering, developer tools |
 | [Grill Me](resources/agentic-engineering/grill-me.md) | Tool | Agentic engineering, agent skills |
 | [Grill with Docs](resources/agentic-engineering/grill-with-docs.md) | Tool | Agentic engineering, agent skills |
 | [Ponytail](resources/agentic-engineering/ponytail.md) | Tool | Agentic engineering, agent skills, developer tools |

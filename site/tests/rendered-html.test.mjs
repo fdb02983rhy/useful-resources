@@ -24,6 +24,11 @@ async function render() {
 }
 
 test("server-renders the resource library", async () => {
+  const generated = await readFile(
+    new URL("../app/resources.ts", import.meta.url),
+    "utf8",
+  );
+  const resourceCount = (generated.match(/^ {2}\{$/gm) ?? []).length;
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
@@ -31,7 +36,7 @@ test("server-renders the resource library", async () => {
   const html = await response.text();
   assert.match(html, /<title>Useful Resources — Curated reference library<\/title>/i);
   assert.match(html, /Reference library/);
-  assert.match(html, />17<\/strong><span>Resources<\/span>/);
+  assert.match(html, new RegExp(`>${resourceCount}<\\/strong><span>Resources<\\/span>`));
   assert.match(html, /Search titles, topics, or notes/);
   assert.match(html, /All formats/);
   assert.match(html, /All topics/);
@@ -50,6 +55,6 @@ test("keeps generated resources and controls wired into the client", async () =>
   assert.match(page, /resource\.topics\.includes\(topic\)/);
   assert.match(page, /searchRef\.current\?\.focus\(\)/);
   assert.match(layout, /Useful Resources — Curated reference library/);
-  assert.equal((generated.match(/^ {2}\{$/gm) ?? []).length, 17);
+  assert.ok((generated.match(/^ {2}\{$/gm) ?? []).length > 0);
   assert.doesNotMatch(page, /react-loading-skeleton|_sites-preview/);
 });

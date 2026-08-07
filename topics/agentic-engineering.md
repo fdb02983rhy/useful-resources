@@ -16,3 +16,18 @@ performed with AI agents.
   that also maintains repository vocabulary and selected ADRs.
 - [Ponytail](../resources/2026/ponytail.md) — a portable anti-overengineering
   policy and review toolkit for coding agents.
+- [Inside OpenAI's in-house data agent](../resources/2026/inside-openais-in-house-data-agent.md)
+  — an internal agent built around permission-aware context, transparent
+  execution, and result-based evaluation.
+- [AI Agent Workshop Tokyo 2026, Part 1: Agentic RL](../resources/2026/agentic-rl-workshop-part-1.md)
+  — a workshop bridge from agent environments and reward contracts to rollout
+  training, trace diagnosis, and safety.
+- [AI Agent Workshop Tokyo — AI Agent Auto Improvement](../resources/2026/ai-agent-workshop-tokyo-auto-improvement.md)
+  — a Weave-centered loop joining human feedback, offline evaluation,
+  production signals, and coding-agent-assisted revision.
+- [Demystifying evals for AI agents](../resources/2026/demystifying-evals-for-ai-agents.md)
+  — an implementation-oriented framework for agent tasks, trials, graders,
+  transcripts, and outcome checks.
+- [Agentic Design Patterns](../resources/2026/agentic-design-patterns.md) — a broad
+  pattern taxonomy paired with many third-party notebook examples, with provenance
+  and reproducibility cautions.

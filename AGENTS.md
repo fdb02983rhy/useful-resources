@@ -9,10 +9,9 @@ study resources.
   playlists, and repositories intact unless the user asks to split them. Treat
   independent URLs submitted together as separate resources.
 - Update an existing note when its canonical URL matches; do not duplicate it.
-- Store notes at `resources/<added-year>/<lowercase-ascii-slug>.md` with `id`,
-  `title`, `kind`, `source_url`, `added`, `status`, and `topics` frontmatter.
-  Use `status: reference`, preserve the submitted URL, and use a kind accepted by
-  `scripts/validate.py`.
+- Store notes at `resources/<primary-topic>/<lowercase-ascii-slug>.md`. The first
+  `topics` entry is the primary topic. Include `id`, `title`, `kind`, `source_url`,
+  `added`, `status`, and `topics`; use `status: reference` and preserve the URL.
 
 ## Notes
 
@@ -30,7 +29,7 @@ study resources.
 ## Finish
 
 1. Inspect `git status` and check for an existing canonical URL before editing.
-2. Update the `README.md` resource table and lightweight topic navigation.
+2. Update the `README.md` resource table.
 3. Refresh frontend data with `npm --prefix site run sync` when resources change.
 4. Run `python3 scripts/validate.py` and review the diff for unsupported claims or
    unrelated changes.

@@ -3,8 +3,20 @@ import { fileURLToPath } from "node:url";
 import path from "node:path";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
-const resourcesDir = path.resolve(scriptDir, "../../resources/2026");
+const resourcesDir = path.resolve(scriptDir, "../../resources");
 const outputPath = path.resolve(scriptDir, "../app/resources.ts");
+
+async function findMarkdownFiles(directory) {
+  const entries = await readdir(directory, { withFileTypes: true });
+  const files = await Promise.all(
+    entries.map(async (entry) => {
+      const entryPath = path.join(directory, entry.name);
+      if (entry.isDirectory()) return findMarkdownFiles(entryPath);
+      return entry.isFile() && entry.name.endsWith(".md") ? [entryPath] : [];
+    }),
+  );
+  return files.flat();
+}
 
 function parseFrontmatter(markdown) {
   const match = markdown.match(/^---\n([\s\S]*?)\n---\n/);
@@ -68,13 +80,13 @@ function parseTopics(value) {
     .filter(Boolean);
 }
 
-const files = (await readdir(resourcesDir))
-  .filter((file) => file.endsWith(".md"))
-  .sort();
+const files = (await findMarkdownFiles(resourcesDir)).sort((a, b) =>
+  path.basename(a).localeCompare(path.basename(b)),
+);
 
 const resources = await Promise.all(
   files.map(async (file) => {
-    const markdown = await readFile(path.join(resourcesDir, file), "utf8");
+    const markdown = await readFile(file, "utf8");
     const meta = parseFrontmatter(markdown);
 
     return {

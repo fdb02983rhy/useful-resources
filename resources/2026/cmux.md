@@ -47,12 +47,6 @@ cmux is most compelling as an attention and organization layer for several live
 agent sessions. Its main constraint is platform scope, and durable processes may
 still need tmux or an agent's native resume mechanism.
 
-## Questions
-
-- How reliable are notification and resume hooks across different agent versions?
-- Can its embedded browser replace a Chrome or Playwright workflow for real projects?
-- Is restored layout sufficient for long-running sessions without tmux?
-
 ## Source
 
 [Open the official site](https://cmux.com/) ·

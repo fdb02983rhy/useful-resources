@@ -53,11 +53,6 @@ Zero-to-Hero material.
 - [03:28:23 — HellaSwag evaluation and the run](https://www.youtube.com/watch?v=l8pRSuU81PU&t=12503s)
 - [03:43:05 — results](https://www.youtube.com/watch?v=l8pRSuU81PU&t=13385s)
 
-## Questions
-
-- Which implementation choices still transfer to newer model architectures?
-- How closely can the run be reproduced on smaller or more recent accelerators?
-
 ## Source
 
 [Watch on YouTube](https://www.youtube.com/watch?v=l8pRSuU81PU&ab_channel=AndrejKarpathy) ·

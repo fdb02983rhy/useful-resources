@@ -45,12 +45,6 @@ This is useful at the earliest stage of a decision, when clarity matters more th
 artifacts. Its non-mutating design limits workspace risk, but important conclusions
 must be transferred elsewhere before the conversation disappears.
 
-## Questions
-
-- Does installation always include the delegated `grilling` dependency?
-- At what scope or round count should one interview be split into several?
-- How much does question quality vary across models and reasoning settings?
-
 ## Source
 
 [Open the submitted skill](https://github.com/mattpocock/skills/tree/main/skills/productivity/grill-me)

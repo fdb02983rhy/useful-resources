@@ -37,12 +37,6 @@ attribution to Ilya Sutskever is not treated as verified in this note.
 _Add notes about the collection as a whole here. Do not create child resource
 notes unless a later request explicitly asks to break the collection down._
 
-## Questions
-
-- Which prerequisite mathematics would make the collection easier to study?
-- Which parts remain foundational, and which need more recent companion material?
-- What reading order best matches the learner's current goals?
-
 ## Source
 
 [Open the Arc folder](https://arc.net/folder/D0472A20-9C20-4D3F-B145-D2865C0A9FEE)

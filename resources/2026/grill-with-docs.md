@@ -44,12 +44,6 @@ Compared with Grill Me, this skill trades a non-mutating, portable workflow for
 durable context. It is a better fit once a real codebase exists, provided
 dependency loading and expected file writes are verified.
 
-## Questions
-
-- How can a project verify that both delegated skills loaded correctly?
-- What process prevents glossary and ADR drift with several contributors?
-- Where should consequential decisions that meet neither documentation threshold go?
-
 ## Source
 
 [Open the submitted skill](https://github.com/mattpocock/skills/tree/main/skills/engineering/grill-with-docs)

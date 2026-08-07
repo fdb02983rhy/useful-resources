@@ -44,13 +44,6 @@ not pinned, and some examples rely on changing hosted APIs and credentials.
 The notebook README also calls the set “58 notebooks,” while the reviewed tree
 contains 65. Do not assume that rights covering any code also cover the included book.
 
-## Questions
-
-- Was redistribution of the complete PDF and notebook collection authorized?
-- What license applies to each notebook without the referenced license file?
-- Which dependency versions are required to reproduce the examples today?
-- Is there an official upstream repository that this copy should track?
-
 ## Source
 
 [Open the submitted repository](https://github.com/evoiz/Agentic-Design-Patterns) ·

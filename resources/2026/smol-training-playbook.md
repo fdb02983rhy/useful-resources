@@ -49,13 +49,6 @@ whole training lifecycle. Its SmolLM3, Nanotron, H100, and cluster-scale specifi
 are examples rather than a universal recipe; framework and accelerator tradeoffs
 will also change over time. The guide excludes pruning and distillation.
 
-## Questions
-
-- How reliably do proxy-ablation rankings transfer to other architectures and domains?
-- At what compute and organizational scale is training from scratch preferable to
-  continued pretraining?
-- Which infrastructure recommendations change on newer accelerators and frameworks?
-
 ## Source
 
 [Open the submitted Hugging Face Space](https://huggingface.co/spaces/HuggingFaceTB/smol-training-playbook) ·

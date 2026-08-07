@@ -21,10 +21,6 @@ Summarize the submitted resource as a whole.
 
 Add sourced observations and clearly marked synthesis.
 
-## Questions
-
-- Record useful open questions.
-
 ## Source
 
 [Open the original resource](https://example.com/)

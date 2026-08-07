@@ -49,12 +49,6 @@ key, normalization, or join chapters.
 - [05:35:14 — normalization](https://www.youtube.com/watch?v=ztHopE5Wnpc&t=20114s)
 - [06:25:55 — joins](https://www.youtube.com/watch?v=ztHopE5Wnpc&t=23155s)
 
-## Questions
-
-- Which examples rely on a particular database engine's behavior?
-- What later material would best extend this foundation into transactions,
-  concurrency, and physical query planning?
-
 ## Source
 
 [Watch on YouTube](https://www.youtube.com/watch?v=ztHopE5Wnpc) ·

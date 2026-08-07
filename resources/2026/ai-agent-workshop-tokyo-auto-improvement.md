@@ -52,12 +52,6 @@ local skills. It reports no completed before-and-after improvement experiment.
 Exclusivity, scale, accuracy, and token-waste claims are not supported by comparative
 benchmarks or documented methods, and time-sensitive forthcoming features need rechecking.
 
-## Questions
-
-- What exact Discovery Agent revision and evaluation set were used in the exercises?
-- How are online judge signals calibrated and protected from drift?
-- Which event speaker authored or presented this particular deck?
-
 ## Source
 
 [Open the submitted PDF](../../assets/pdfs/ai-agent-workshop-tokyo-auto-improvement.pdf) ·

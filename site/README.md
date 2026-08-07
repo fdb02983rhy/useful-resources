@@ -11,4 +11,4 @@ source highlights.
 ## Development
 
 - `npm run dev` starts the local site.
-- `npm run build` creates the deployment build.
+- `npm run build` creates the production build.

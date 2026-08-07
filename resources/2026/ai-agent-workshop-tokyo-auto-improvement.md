@@ -60,10 +60,12 @@ benchmarks or documented methods, and time-sensitive forthcoming features need r
 
 ## Source
 
+[Open the submitted PDF](../../assets/pdfs/ai-agent-workshop-tokyo-auto-improvement.pdf) ·
 [Open the official W&B event page](https://wandb.ai/site/resources/events/ai-agent-workshop-tokyo/)
 
 The inspected local artifact is an attendee workshop deck dated June 2026, not a
 public download from the event page. It names Weights & Biases by CoreWeave but no
-individual author. No public deck URL, license, or redistribution permission was visible.
+individual author. No public deck URL or source-provided license was visible. The
+submitted copy is stored here with the submitter's explicit permission.
 The inspected file's SHA-256 is
 `243e2ac04f2e424925ecd9902ad6cf79da5b7b9cc75b3164805dcfbadfa6988f`.

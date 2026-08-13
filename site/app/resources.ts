@@ -393,6 +393,31 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "marcos-hernanz-side-project-agents-md",
+    "title": "Marcos Hernanz's Side-Project AGENTS.md",
+    "kind": "web",
+    "sourceUrl": "https://x.com/MarcosHernanz/status/2083954734487212511",
+    "added": "2026-08-13",
+    "status": "reference",
+    "topics": [
+      "agentic-engineering",
+      "agent-instructions",
+      "software-design"
+    ],
+    "summary": "An X post in which Marcos Hernanz shares a compact AGENTS.md developed after extensive agent use. Its rules favor simple implementations for current needs, incremental end-to-end development, modular components, established libraries, existing project dependencies, durable architecture, and learning from proven products before designing a new solution. The post also takes a deliberately aggressive stance against backward-compatibility layers. Hernanz adds an explicit follow-up warning that he uses these instructions only for side projects and does not recommend applying them uncritically in production.",
+    "whySaved": [
+      "Offers a short example of encoding software-design preferences in repository-level agent instructions.",
+      "Provides useful prompts for discussing simplicity, reuse, modularity, and incremental delivery with coding agents.",
+      "Includes an important reminder that effective instructions are contextual and can become destructive when copied into a different environment."
+    ],
+    "highlights": [
+      "Hernanz says the shared file reflects experience from roughly 60 billion tokens of agent use.",
+      "The attached instructions emphasize the simplest complete solution, growing a working system in layers, clear separation of concerns, and established dependencies over unnecessary custom code.",
+      "A follow-up adds the principle of studying how established products solve a problem and adopting proven patterns where appropriate.",
+      "The author explicitly limits this setup to side projects and warns against treating it as production guidance."
+    ]
+  },
+  {
     "id": "no-mistakes",
     "title": "git push no-mistakes",
     "kind": "tool",

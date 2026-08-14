@@ -85,6 +85,31 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "archify",
+    "title": "Archify",
+    "kind": "tool",
+    "sourceUrl": "https://tt-a1i.github.io/archify/",
+    "added": "2026-08-14",
+    "status": "reference",
+    "topics": [
+      "agentic-engineering",
+      "developer-tools",
+      "visualization"
+    ],
+    "summary": "An agent skill and local renderer for turning a system description or codebase analysis into an interactive technical diagram. Archify supports architecture, workflow, sequence, data-flow, and lifecycle views using typed JSON source, deterministic validation, and self-contained HTML output. The generated viewer can expose authored routes, reachability, guided stories, and source evidence, with static and motion export formats for sharing or review.",
+    "whySaved": [
+      "Produces inspectable diagram source and validation results rather than only a generated image.",
+      "Covers several technical storytelling modes with one agent-facing workflow.",
+      "Creates portable HTML artifacts that can be refined conversationally and shared without a hosted service."
+    ],
+    "highlights": [
+      "The skill supports Raven, Cursor, Claude Code, Codex CLI, and OpenCode.",
+      "Its five diagram modes are Architecture, Workflow, Sequence, Data Flow, and Lifecycle; Architecture Delta can compare validated before-and-after sources.",
+      "Schema, layout, HTML/SVG, route, and label-clearance checks run before a showcase artifact replaces the last verified output.",
+      "Generated artifacts can include semantic search, exact authored route and reachability inspection, guided views, themes, and finite motion."
+    ]
+  },
+  {
     "id": "cmux",
     "title": "cmux",
     "kind": "tool",

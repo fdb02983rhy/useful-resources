@@ -517,6 +517,30 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "vite-plus",
+    "title": "Vite+",
+    "kind": "tool",
+    "sourceUrl": "https://viteplus.dev/",
+    "added": "2026-08-14",
+    "status": "reference",
+    "topics": [
+      "developer-tools",
+      "web-development"
+    ],
+    "summary": "An open-source web-development toolchain exposed through the vp command. It combines runtime and package-manager management with Vite and Rolldown builds, Vitest, Oxlint, Oxfmt, tsdown packaging, and cached task orchestration. Vite+ aims to replace a collection of separately configured local tools with one command surface and a shared vite.config.ts, while retaining the Vite plugin and framework ecosystem.",
+    "whySaved": [
+      "Offers consistent development, checking, testing, building, and task commands across projects and teams.",
+      "Can use npm, pnpm, Yarn, or Bun rather than imposing a new package manager.",
+      "Provides migration tooling for consolidating an existing Vite-based setup."
+    ],
+    "highlights": [
+      "vp dev, vp check, vp test, vp build, vp pack, and vp run cover the main local development lifecycle, while vp env and dependency commands manage Node.js and the selected package manager.",
+      "The integrated stack includes Vite, Rolldown, Vitest, Oxlint, Oxfmt, tsdown, and Vite Task, with support for frameworks built on Vite.",
+      "vp migrate can update dependencies, rewrite imports, merge tool-specific configuration, update scripts, and optionally add hooks or agent instructions.",
+      "Vite+ is MIT-licensed and currently in beta. Its maintainers describe it as stable but not feature-complete on the path to 1.0."
+    ]
+  },
+  {
     "id": "wait-what",
     "title": "Wait What",
     "kind": "tool",

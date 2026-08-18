@@ -542,6 +542,31 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "stanford-cs336-language-modeling-from-scratch",
+    "title": "Stanford CS336: Language Modeling from Scratch",
+    "kind": "course",
+    "sourceUrl": "https://cs336.stanford.edu/",
+    "added": "2026-08-18",
+    "status": "reference",
+    "topics": [
+      "deep-learning",
+      "language-models",
+      "systems"
+    ],
+    "summary": "An advanced Stanford course on building language models across the full development pipeline. The Spring 2026 offering moves from tokenization, Transformer components, and training into GPU kernels, distributed systems, scaling laws, inference, evaluation, pretraining data, supervised fine-tuning, reinforcement learning, and alignment. The public course site keeps the syllabus, lecture materials, recordings, and five substantial programming assignments together as one implementation-driven curriculum.",
+    "whySaved": [
+      "Connects model architecture and training theory to the systems engineering required to run language models efficiently.",
+      "Provides assignment code for implementing core components rather than only using high-level training libraries.",
+      "Covers the complete lifecycle from raw pretraining data through evaluation and post-training."
+    ],
+    "highlights": [
+      "Tatsunori Hashimoto and Percy Liang teach the Spring 2026 offering.",
+      "Assignment 1 implements a tokenizer, Transformer architecture, optimizer, and minimal training run.",
+      "Later assignments cover profiling and Triton FlashAttention2, memory-efficient distributed training, scaling laws, Common Crawl filtering and deduplication, and supervised fine-tuning plus reinforcement learning for math reasoning.",
+      "The course assumes strong Python and software-engineering ability, PyTorch and systems-optimization experience, linear algebra, probability, and prior machine learning or deep-learning knowledge."
+    ]
+  },
+  {
     "id": "vite-plus",
     "title": "Vite+",
     "kind": "tool",

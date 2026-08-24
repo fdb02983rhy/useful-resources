@@ -207,6 +207,31 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "eli5-claude-plugin",
+    "title": "ELI5 Claude Plugin",
+    "kind": "tool",
+    "sourceUrl": "https://github.com/anthropics/claude-plugins-community/tree/main/eli5",
+    "added": "2026-08-24",
+    "status": "reference",
+    "topics": [
+      "agentic-engineering",
+      "agent-plugins",
+      "learning"
+    ],
+    "summary": "A minimal community plugin for Claude Code and Claude Cowork that turns a topic into an explain-like-I-am-five HTML artifact. Invoking /eli5 <topic> asks Claude to teach someone with no prior knowledge using large pictures and very few words. The complete plugin consists of a manifest, a short README, and one compact skill instruction that passes the command arguments directly into the explainer prompt.",
+    "whySaved": [
+      "Provides a quick visual-explanation mode for unfamiliar concepts.",
+      "Demonstrates how little structure a focused, single-purpose Claude plugin can require.",
+      "Offers a reusable interaction pattern for reducing jargon and assumed context."
+    ],
+    "highlights": [
+      "The skill is invoked with /eli5 <topic> and can also apply when the user asks for a very simple picture-based explanation.",
+      "Its requested output is an HTML artifact with large visuals and few words, written for someone who knows nothing about the topic.",
+      "The manifest identifies version 1.0.0, credits Thariq Shihipar, and declares an MIT license.",
+      "The marketplace classifies it under learning. It contains no MCP server, executable script, external service, or additional reference material."
+    ]
+  },
+  {
     "id": "fast-ai",
     "title": "fast.ai",
     "kind": "web",

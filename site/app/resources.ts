@@ -616,6 +616,31 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "vulture",
+    "title": "Vulture",
+    "kind": "tool",
+    "sourceUrl": "https://github.com/jendrikseipp/vulture",
+    "added": "2026-08-24",
+    "status": "reference",
+    "topics": [
+      "developer-tools",
+      "static-analysis",
+      "python"
+    ],
+    "summary": "A static analyzer for finding unused and unreachable code in Python projects. Vulture parses the supplied files into abstract syntax trees, records defined and used names, and reports likely dead functions, classes, methods, imports, variables, attributes, properties, and code paths with a confidence score.",
+    "whySaved": [
+      "Surfaces dead Python code beyond unused imports and local variables.",
+      "Ranks findings by confidence so cleanup can begin with safer candidates.",
+      "Supports reusable project configuration, whitelists, pre-commit, and CI workflows."
+    ],
+    "highlights": [
+      "Vulture scans Python files or directories and can analyze application and test code together to help reveal untested code.",
+      "It detects unused definitions and unreachable statements, including code after return, break, continue, or raise, and some unsatisfiable conditions.",
+      "Findings receive confidence values from 60% to 100%; imports are assigned 90%, while arguments and unreachable code receive 100%. --min-confidence filters the report.",
+      "Configuration can live under [tool.vulture] in pyproject.toml. Findings can be suppressed with whitelists, exclusions, ignored names or decorators, and supported noqa comments."
+    ]
+  },
+  {
     "id": "wait-what",
     "title": "Wait What",
     "kind": "tool",

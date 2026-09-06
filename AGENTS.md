@@ -32,4 +32,5 @@ study resources.
 2. Refresh frontend data with `npm --prefix site run sync` when resources change.
 3. Run `python3 scripts/validate.py` and review the diff for unsupported claims or
    unrelated changes.
-4. Commit each ingestion request atomically. Push only when the user asks.
+4. Commit each ingestion request atomically and push automatically unless the
+   user asks otherwise.

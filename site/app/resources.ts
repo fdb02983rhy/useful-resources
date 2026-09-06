@@ -496,6 +496,31 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "lifecycle-of-llm-as-a-judge",
+    "title": "The Lifecycle of LLM-as-a-Judge for Large-Scale Recommendation Explanations",
+    "kind": "paper",
+    "sourceUrl": "https://arxiv.org/abs/2608.18300",
+    "added": "2026-09-07",
+    "status": "reference",
+    "topics": [
+      "model-evaluation",
+      "llm-as-a-judge",
+      "recommender-systems"
+    ],
+    "summary": "A Netflix case study that treats a production LLM judge as a system with four phases: establishing human-grounded evaluation criteria, tuning the judge's rubrics, deploying it as both a quality gate and revision critic, and monitoring its alignment as live data changes. The paper introduces Reasoning-Aligned Rubric Tuning (RART), which uses both label errors and disagreements between human and judge rationales to revise a criterion's rubric. It then connects the tuned judges to a bounded generate-judge-revise loop and a weekly human-in-the-loop drift process.",
+    "whySaved": [
+      "Extends LLM-as-a-judge evaluation from a one-time benchmark into a maintained production lifecycle.",
+      "Shows how human rationales can improve both the judge's decisions and the feedback sent to a generator after rejection.",
+      "Connects offline alignment, live quality gating, product experimentation, and post-deployment monitoring in one concrete system."
+    ],
+    "highlights": [
+      "The initial domain benchmark contained roughly 900 human-labeled recommendation explanations, kept near class balance and enriched with difficult cases. During testing, about 300 newly rated live examples were added each week.",
+      "RART tunes one judge for each of three must-have criteria. Its reflector sees label mismatches and agreed-fail examples where a meta-judge finds that the LLM and human rejected an explanation for different reasons.",
+      "On 300 agreed-fail rationale pairs, the meta-judge matched trained human judgments 98.6% of the time. In an eight-seed held-out ablation, rationale-aware tuning improved specificity more than label-only tuning when the default rubric left room for improvement, although one criterion traded away some recall.",
+      "In deployment, the judge rejects or critiques each explanation and the generator retries up to three times. The authors report that stronger generators obtained at least 80% of their achievable revision lift within three to four retries, while judge feedback did not compensate for a weak generator."
+    ]
+  },
+  {
     "id": "llm-evaluation-guidebook",
     "title": "The LLM Evaluation Guidebook",
     "kind": "web",

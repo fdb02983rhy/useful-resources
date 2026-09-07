@@ -667,6 +667,31 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "understanding-kv-cache",
+    "title": "Understanding KV Cache",
+    "kind": "book",
+    "sourceUrl": "https://drive.google.com/file/d/12KlRm0YLYrfpLF2q3_tBDNMMkJ7_bYNF/view",
+    "added": "2026-09-07",
+    "status": "reference",
+    "topics": [
+      "deep-learning",
+      "model-inference",
+      "systems"
+    ],
+    "summary": "A 33-page handbook by @techNmak explaining KV caching from causal attention through production LLM serving. It covers prefill and decoding, per-layer tensor shapes, cache-memory calculations, MHA/MQA/GQA and MLA, positional information, PagedAttention, prefix reuse, isolation, eviction, offloading, and quantization.",
+    "whySaved": [
+      "Connects attention mechanics to memory capacity, bandwidth, and serving costs.",
+      "Provides worked cache-size examples and compact comparisons of architectural and runtime choices.",
+      "Gives a practical checklist for understanding what a cache stores, where it lives, when it can be reused, and which resource limits performance."
+    ],
+    "highlights": [
+      "In ordinary causal attention, future tokens do not change earlier layer states, so previous keys and values can be reused. Dense decoding still attends over the cached history; caching does not make it constant-time.",
+      "For a uniform conventional attention stack, ideal per-sequence cache payload is 2 × layers × cached_tokens × kv_heads × head_dimension × bytes_per_element. Actual allocation also includes runtime overhead and model-specific details.",
+      "MQA and GQA reduce the number of KV heads; MLA uses a compressed latent representation with separate positional considerations.",
+      "PagedAttention manages cache placement in blocks. Prefix caching reuses compatible prefill state across requests; offloading trades transfers against recomputation; quantization trades numerical precision for smaller state."
+    ]
+  },
+  {
     "id": "vite-plus",
     "title": "Vite+",
     "kind": "tool",

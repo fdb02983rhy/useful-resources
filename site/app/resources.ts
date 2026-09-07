@@ -667,6 +667,30 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "uber-efficient-software-factory",
+    "title": "Running a Software Factory Efficiently at Uber Scale",
+    "kind": "article",
+    "sourceUrl": "https://www.uber.com/gb/en/blog/efficient-software-factory/",
+    "added": "2026-09-08",
+    "status": "reference",
+    "topics": [
+      "agentic-engineering",
+      "software-development",
+      "cost-optimization"
+    ],
+    "summary": "Uber describes how it measures and reduces agent costs across software development: workload-specific model benchmarks, context limits, prompt caching, on-demand tool discovery, scripted tool orchestration, graph-grounded context, and session analytics.",
+    "whySaved": [
+      "Provides a practical framework for diagnosing agent spending.",
+      "Connects efficiency measurements with completed outcomes and quality."
+    ],
+    "highlights": [
+      "Spend is decomposed into users, sessions per user, turns per session, requests per turn, tokens per request, and token price.",
+      "Holding a model fixed, Uber reports costs per 1,000 requests falling almost 34% and costs per session falling 52% from their respective peaks.",
+      "Model selection weighs task quality, reliability, and completion cost. Tool discovery and code-mode scripts reduce schema, polling, and response overhead.",
+      "Context graphs reduce information searches; live cost counters and trace analysis expose waste. Automated skill improvement remains ongoing work."
+    ]
+  },
+  {
     "id": "understanding-kv-cache",
     "title": "Understanding KV Cache",
     "kind": "book",

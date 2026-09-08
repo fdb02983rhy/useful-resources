@@ -665,6 +665,30 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "show-me",
+    "title": "Show Me",
+    "kind": "tool",
+    "sourceUrl": "https://github.com/humanlayer/skills/tree/main/plugins/show-me/skills/show-me",
+    "added": "2026-09-08",
+    "status": "reference",
+    "topics": [
+      "agentic-engineering",
+      "agent-skills",
+      "visualization"
+    ],
+    "summary": "HumanLayer's agent skill for explaining the current conversation topic visually. It selects a compact representation, from pseudocode and structural trees to Mermaid, diffs, or a focused HTML artifact, while keeping prose brief.",
+    "whySaved": [
+      "Makes architecture, execution flow, and proposed changes easier to discuss.",
+      "Chooses the representation around the question rather than prescribing one diagram format."
+    ],
+    "highlights": [
+      "Maps algorithms to pseudocode, runtime flow to call trees, UI boundaries to component trees, and file responsibilities to shallow file trees.",
+      "Uses Mermaid for interactions and flows, and diffs for changes to an existing structure. Shows complete blocks when context or a copyable target matters.",
+      "For denser concepts or visual UI work, creates and opens one HTML diagram, infographic, or short slide deck using product styling and responsive layouts.",
+      "Keeps visuals beside their explanations and limits detail to the calls, files, states, and boundaries needed for the current question."
+    ]
+  },
+  {
     "id": "smol-training-playbook",
     "title": "The Smol Training Playbook: The Secrets to Building World-Class LLMs",
     "kind": "web",

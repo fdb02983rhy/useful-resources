@@ -691,6 +691,30 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "teamai-cli",
+    "title": "TeamAI CLI",
+    "kind": "tool",
+    "sourceUrl": "https://github.com/Tencent/teamai-cli",
+    "added": "2026-09-08",
+    "status": "reference",
+    "topics": [
+      "agentic-engineering",
+      "developer-tools",
+      "knowledge-management"
+    ],
+    "summary": "Tencent's CLI for distributing shared agent configurations and team knowledge through Git. It combines skills, rules, hooks, and MCP configuration management with knowledge retrieval, codebase graphs, session summaries, and team dashboards across multiple coding-agent tools.",
+    "whySaved": [
+      "Provides a reviewable workflow for keeping team agent setups consistent.",
+      "Connects reusable configuration with accumulated engineering knowledge."
+    ],
+    "highlights": [
+      "Resource changes follow a push, review, merge, and pull workflow. Session-start hooks pull approved updates into local agent configurations.",
+      "Project and user scopes, role and tag filtering, and additional skill-repository subscriptions control distribution. Feature coverage differs by agent host.",
+      "Automatic knowledge recall is disabled by default. When enabled, it searches team knowledge; imported codebase graphs enrich retrieval with structural links.",
+      "Session friction can prompt learning-sharing suggestions. Session summaries, usage digests, and dashboards expose activity and knowledge-base health."
+    ]
+  },
+  {
     "id": "uber-efficient-software-factory",
     "title": "Running a Software Factory Efficiently at Uber Scale",
     "kind": "article",

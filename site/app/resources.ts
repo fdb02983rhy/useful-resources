@@ -158,6 +158,29 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "claude-platform-cost-optimization",
+    "title": "Reducing cost and improving performance with Claude Platform",
+    "kind": "article",
+    "sourceUrl": "https://x.com/claudedevs/status/2097369738968195513?s=46&t=ylgcGz4nmoG6QcDWJRetoQ",
+    "added": "2026-09-09",
+    "status": "reference",
+    "topics": [
+      "agentic-engineering",
+      "cost-optimization",
+      "prompt-engineering"
+    ],
+    "summary": "An Anthropic article shared by ClaudeDevs on reducing application costs through prompt caching, instruction cleanup, and calibrated model effort. It introduces three claude-api skill workflows for auditing prompts, optimizing spend, and searching configurations against evaluations.",
+    "whySaved": [
+      "Connects cost diagnostics with application quality and measured configuration changes."
+    ],
+    "highlights": [
+      "Preserve byte-identical prompt prefixes and tool ordering, inspect cache misses and expiry, and place volatile context after stable content.",
+      "/claude-api prompt-audit targets redundant verification rituals, excessive thoroughness, mandatory reasoning scaffolds, contradictions, and obsolete settings when migrating models.",
+      "/claude-api hillclimb searches model, effort, and prompt configurations using training cases, then scores the result on held-out tests.",
+      "/claude-api cost-optimize profiles spend from reports, logs, or code estimates; considers caching, batching, and bounded output; and measures model/effort tradeoffs when an evaluation is supplied."
+    ]
+  },
+  {
     "id": "cmux",
     "title": "cmux",
     "kind": "tool",

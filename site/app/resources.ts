@@ -688,6 +688,29 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "rethinking-skills-and-prompts-for-gpt-6-astra",
+    "title": "Rethinking skills and prompts for GPT-6 Astra",
+    "kind": "article",
+    "sourceUrl": "https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra",
+    "added": "2026-09-13",
+    "status": "reference",
+    "topics": [
+      "agentic-engineering",
+      "prompt-engineering",
+      "agent-skills"
+    ],
+    "summary": "OpenAI's guidance on revisiting skills, AGENTS.md, and task prompts for GPT-6 Astra. It advocates narrower triggers, selective context loading, and explicit completion boundaries instead of carrying forward every instruction developed for earlier models.",
+    "whySaved": [
+      "Useful when auditing accumulated agent instructions after a model upgrade."
+    ],
+    "highlights": [
+      "Long or overlapping skill descriptions can be shortened by Codex or trigger irrelevant workflows; keep activation conditions concise and specific.",
+      "Use a small routing document with supporting references and scripts loaded as needed; rigid recipes may overconstrain newer models.",
+      "Revisit repository-wide reading and testing rules, directing agents to documents according to the task and explicitly authorizing known-safe workflows.",
+      "State the intended finish line and permission boundaries clearly: Astra may pause earlier than desired, while shared instructions must also accommodate other models."
+    ]
+  },
+  {
     "id": "show-me",
     "title": "Show Me",
     "kind": "tool",

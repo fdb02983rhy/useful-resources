@@ -711,6 +711,29 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "shadcn-lint",
+    "title": "@shadcn/lint",
+    "kind": "tool",
+    "sourceUrl": "https://github.com/shadcn-ui/lint",
+    "added": "2026-09-15",
+    "status": "reference",
+    "topics": [
+      "developer-tools",
+      "web-development",
+      "static-analysis"
+    ],
+    "summary": "A linter for Tailwind design systems that turns component and theme policies into checks coding agents can run. Diagnostics explain violations and suggest repairs using the project's components, variants, and theme, without changing component APIs.",
+    "whySaved": [
+      "Makes design-system conventions executable and gives agents targeted feedback when generated UI drifts from them."
+    ],
+    "highlights": [
+      "Supports Tailwind v4 with ESLint or Oxlint; shadcn/ui is optional. Requires Node.js 20.19+, ESLint 9.30+ or Oxlint 1.80+; Oxlint's JavaScript plugin API is currently alpha.",
+      "Rules cover component restyling, raw colors, arbitrary values, inline styles, unknown classes, and classes that cannot be statically read.",
+      "Per-component contracts define allowed overrides; custom diagnostics can refer to available variants, sizes, and source files.",
+      "Discovers shadcn/ui components and themes through components.json, with configurable recognition for custom components and monorepos."
+    ]
+  },
+  {
     "id": "show-me",
     "title": "Show Me",
     "kind": "tool",

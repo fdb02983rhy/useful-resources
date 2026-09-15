@@ -133,6 +133,29 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "anthropic-scaling-test-impact-analysis",
+    "title": "Agentic coding is straining CI. Here’s how we scaled test impact analysis at Anthropic",
+    "kind": "article",
+    "sourceUrl": "https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic",
+    "added": "2026-09-15",
+    "status": "reference",
+    "topics": [
+      "agentic-engineering",
+      "continuous-integration",
+      "testing"
+    ],
+    "summary": "Anthropic's account of scaling deterministic test selection as agent-written code increased CI load. It follows temporary fixes through a redesign that separates result ingestion, shared storage, history aggregation, and test selection.",
+    "whySaved": [
+      "Shows how downstream infrastructure becomes a bottleneck as coding and review accelerate."
+    ],
+    "highlights": [
+      "CI jobs grew 25-fold over six months. Listener lag made test selection rely on stale results; this did not mean CI stopped running or untested code reached production.",
+      "Larger machines, per-package worker shards, and restarts provided progressively shorter relief while state remained in the process.",
+      "Stateless listeners now append results to a shared in-memory journal; a separate consumer aggregates per-test history for the selector, enabling horizontal scaling.",
+      "One engineer completed the redesign in three weeks. Anthropic reports stability after tuning, at higher running cost, and recommends measuring incoming versus processed jobs and keeping state outside workers."
+    ]
+  },
+  {
     "id": "archify",
     "title": "Archify",
     "kind": "tool",

@@ -565,6 +565,29 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "lieflat-less-ai-tone",
+    "title": "Lieflat Less AI Tone",
+    "kind": "tool",
+    "sourceUrl": "https://github.com/larashero3-dotcom/lieflat-less-ai-tone",
+    "added": "2026-09-16",
+    "status": "reference",
+    "topics": [
+      "agentic-engineering",
+      "agent-skills",
+      "writing"
+    ],
+    "summary": "An agent skill for revising Chinese drafts to reduce formulaic AI-style phrasing. The repository combines an eleven-rule editing prompt, bilingual research notes, and scripts for measuring candidate style features on supplied corpora.",
+    "whySaved": [
+      "Offers a concrete editing checklist with explicit preservation rules and documented measurement limitations."
+    ],
+    "highlights": [
+      "Reports comparing 300 model-generated and 329 human-written articles, totaling about 2.83 million Chinese characters, and retaining eleven of 26 candidate features.",
+      "Targets patterns such as repeated contrast formulas, adjacent sentence structures, punctuation overuse, translationese, and paragraph-opening comments with unclear referents.",
+      "Requires minimal edits to matching passages while preserving facts, qualifiers, unmatched text, and document structure; a supplied author-style guide takes precedence.",
+      "Rejects blanket removal of questions or metaphors and artificial sentence-length variation. Findings vary by model and genre; regex-based measurements have documented errors and corrections."
+    ]
+  },
+  {
     "id": "lifecycle-of-llm-as-a-judge",
     "title": "The Lifecycle of LLM-as-a-Judge for Large-Scale Recommendation Explanations",
     "kind": "paper",

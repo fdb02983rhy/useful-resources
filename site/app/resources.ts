@@ -251,6 +251,29 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "deepseek-balance-whale-widget",
+    "title": "DeepSeek Balance Whale Widget",
+    "kind": "tool",
+    "sourceUrl": "https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget",
+    "added": "2026-09-17",
+    "status": "reference",
+    "topics": [
+      "developer-tools",
+      "usage-monitoring",
+      "agentic-engineering"
+    ],
+    "summary": "A DeepSeek Harness (DSH) web plugin that displays API balances, usage history, and per-turn cost estimates through an animated whale widget. It includes customizable bubbles, characters, sounds, dragging, and edge snapping.",
+    "whySaved": [
+      "Keeps spending feedback visible alongside agent conversations."
+    ],
+    "highlights": [
+      "Refreshes DeepSeek balances every 60 seconds or on demand, with low-balance, daily-budget, and per-turn spending notifications.",
+      "Separates account-level balance observations from local token-based estimates; recharges and other adjustments can require explicit reconciliation.",
+      "Supports provider templates and custom balance or quota endpoints, using DSH's credential service. Providers without balance endpoints use local usage estimates instead.",
+      "Can read local Codex session logs, but remains a DSH plugin, not a Codex plugin. The README marks Codex support partial and subscription-window handling as unverified against real subscription samples."
+    ]
+  },
+  {
     "id": "demystifying-evals-for-ai-agents",
     "title": "Demystifying evals for AI agents",
     "kind": "article",

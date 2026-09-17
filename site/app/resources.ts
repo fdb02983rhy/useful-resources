@@ -204,6 +204,30 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "bend",
+    "title": "Bend 2",
+    "kind": "tool",
+    "sourceUrl": "https://github.com/bendlang/bend",
+    "added": "2026-09-18",
+    "status": "reference",
+    "topics": [
+      "software-development",
+      "programming-languages",
+      "formal-verification",
+      "parallel-computing"
+    ],
+    "summary": "A young programming language combining dependent types, checked proofs, and CPU/GPU parallel execution. It proposes expressing application requirements as laws that AI-written code must satisfy.",
+    "whySaved": [
+      "Explores machine-checked specifications as a safeguard for AI-assisted coding."
+    ],
+    "highlights": [
+      "LAWS.bend declares properties; PROOF.bend supplies proofs for the compiler to check.",
+      "Targets C, Metal, CUDA, and JavaScript. Parallel execution currently requires balanced calls; JavaScript is single-core. Performance claims are project-reported.",
+      "Bend 2 is incompatible with Bend 1/HVM. It requires explicit annotations, lacks automated proof search, and has a small library and tooling ecosystem.",
+      "The README warns that the compiler is not fully audited, its Lean formalization differs from the implementation, and consistency bugs may exist. Floating-point reasoning is unsupported; @unsafe can disable termination checking."
+    ]
+  },
+  {
     "id": "claude-platform-cost-optimization",
     "title": "Reducing cost and improving performance with Claude Platform",
     "kind": "article",

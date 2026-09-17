@@ -15,6 +15,29 @@ export type Resource = {
 
 export const resources: Resource[] = [
   {
+    "id": "12-factor-agents",
+    "title": "12-Factor Agents",
+    "kind": "repository",
+    "sourceUrl": "https://github.com/humanlayer/12-factor-agents",
+    "added": "2026-09-18",
+    "status": "reference",
+    "topics": [
+      "agentic-engineering",
+      "software-architecture",
+      "context-engineering"
+    ],
+    "summary": "A repository-hosted guide to building reliable LLM applications through twelve engineering principles. It advocates adding focused agent capabilities to existing software while retaining explicit control over prompts, context, execution, and state.",
+    "whySaved": [
+      "A practical checklist for reviewing production agent architecture."
+    ],
+    "highlights": [
+      "Translate natural-language requests into structured tool decisions; application code executes them and controls the workflow.",
+      "Manage prompts and context directly, including retrieved information, history, memory, and compact error feedback. Experiment with application-specific formats.",
+      "Bring execution and business state together, expose start/pause/resume APIs, and model requests for human input as tool calls.",
+      "Prefer narrowly scoped agents within larger deterministic systems, support triggers beyond chat, and model the agent as a stateless reducer."
+    ]
+  },
+  {
     "id": "agentic-design-patterns",
     "title": "Agentic Design Patterns: A Hands-On Guide to Building Intelligent Systems",
     "kind": "repository",

@@ -520,6 +520,29 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "how-we-made-claude-ai-faster",
+    "title": "How we made claude.ai 3x faster in two weeks",
+    "kind": "article",
+    "sourceUrl": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
+    "added": "2026-09-25",
+    "status": "reference",
+    "topics": [
+      "agentic-engineering",
+      "performance-engineering",
+      "testing"
+    ],
+    "summary": "Anthropic's account of a performance sprint across Claude's web and desktop apps. Engineers used Claude to investigate bottlenecks, build benchmarks, propose changes, and monitor deployments, with humans directing work and approving changes.",
+    "whySaved": [
+      "Shows how measurable feedback and regression checks support sustained agent work."
+    ],
+    "highlights": [
+      "Thirteen p75 measurements across four user journeys improved by a geometric mean of 3.1x. Fresh web loading fell from 3,085 to 550 milliseconds.",
+      "Deterministic instruction, render, and DOM counts became CI limits only after demonstrating a relationship to user-perceived latency. Limits tightened as improvements landed.",
+      "Work followed a repeated cycle: reproduce, benchmark, review, deploy behind a flag, inspect real-user data, and preserve confirmed gains in CI.",
+      "Optimizations included an immediately typeable static composer, session prefetching, fewer re-renders, and incremental streaming work. Human ownership, approvals, and staged rollouts remained central."
+    ]
+  },
+  {
     "id": "ilya-30u30",
     "title": "Ilya 30u30",
     "kind": "collection",
@@ -608,6 +631,29 @@ export const resources: Resource[] = [
       "Global memory should stay minimal because it is loaded into every session; project memory can accumulate repository-specific conventions and corrections. Conditionally useful instructions should move into skills so they are loaded only when relevant (11:24, 14:50, 16:12).",
       "Skills from untrusted sources create security risk, and popularity alone does not demonstrate that a skill improves agent performance. The video recommends preferring evaluated, task-specific skills over broad promises of automatic improvement (18:40).",
       "The workflow uses voice input and tools designed for agent efficiency, then an interactive HTML artifact for planning so requirements and alternatives can be reviewed visually before implementation (20:27, 22:12, 24:25)."
+    ]
+  },
+  {
+    "id": "laya",
+    "title": "Laya",
+    "kind": "tool",
+    "sourceUrl": "https://huggingface.co/convaiinnovations/laya",
+    "added": "2026-09-25",
+    "status": "reference",
+    "topics": [
+      "artificial-intelligence",
+      "structured-prediction",
+      "model-evaluation"
+    ],
+    "summary": "An Apache-2.0 model family for classification, routing, and scoring. It answers typed questions about supplied text or state in a batched forward pass, returning choices and probabilities. The model hub includes English, multilingual, and task-specific checkpoints.",
+    "whySaved": [
+      "A self-hostable option for experimenting with structured decision models."
+    ],
+    "highlights": [
+      "The root checkpoint uses ModernBERT-large; the multilingual variant uses mmBERT-base. The SDK routes English and other languages to different checkpoints.",
+      "Training uses Reinforcement Learning for Calibrated Decisions. The card also reports overconfidence and recommends fitting calibration temperatures on domain data.",
+      "Strong typed-decision results come from a specialized fine-tuned checkpoint; base checkpoints fall below the majority-class baseline on that benchmark.",
+      "Context and option-token budgets constrain long inputs and large label sets. Reported Jev comparisons use external results with different prompts and samples."
     ]
   },
   {
@@ -944,6 +990,29 @@ export const resources: Resource[] = [
       "Project and user scopes, role and tag filtering, and additional skill-repository subscriptions control distribution. Feature coverage differs by agent host.",
       "Automatic knowledge recall is disabled by default. When enabled, it searches team knowledge; imported codebase graphs enrich retrieval with structural links.",
       "Session friction can prompt learning-sharing suggestions. Session summaries, usage digests, and dashboards expose activity and knowledge-base health."
+    ]
+  },
+  {
+    "id": "train-your-own-jev",
+    "title": "How to train your own Jev for $17",
+    "kind": "article",
+    "sourceUrl": "https://www.together.ai/blog/how-to-train-your-own-jev",
+    "added": "2026-09-25",
+    "status": "reference",
+    "topics": [
+      "deep-learning",
+      "fine-tuning",
+      "structured-prediction"
+    ],
+    "summary": "Together AI's tutorial for fine-tuning Qwen3.5 4B into a classifier, preparing mixed decision datasets, deploying a dedicated endpoint, and querying it with structured inputs. It introduces together/Tev1-4B-experimental as a hosted option.",
+    "whySaved": [
+      "A concrete workflow from classification examples to a deployed model."
+    ],
+    "highlights": [
+      "Companion scripts fetch and normalize datasets covering inference, intent, sentiment, policies, routing, and research categories before launching training.",
+      "The example reports about $17 in training costs and roughly 25 minutes of training, followed by deployment on a dedicated H100 endpoint.",
+      "Requests contain state, a question, and labeled options. The example client supplies a system prompt and inference settings; direct callers must set them.",
+      "The article explains how to stop the dedicated endpoint after experimentation."
     ]
   },
   {

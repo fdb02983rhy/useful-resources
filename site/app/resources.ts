@@ -826,6 +826,28 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "poteto-building-trust-in-coding-agents",
+    "title": "Building Trust in Coding Agents — Lauren's Production Workflow",
+    "kind": "video",
+    "sourceUrl": "https://x.com/poteto/status/2102050467505430555?s=46&t=ylgcGz4nmoG6QcDWJRetoQ",
+    "added": "2026-09-25",
+    "status": "reference",
+    "topics": [
+      "agentic-engineering",
+      "software-development"
+    ],
+    "summary": "Lauren (@poteto) explains how verification tools, reusable engineering skills, and constrained codebase architecture make coding agents more trustworthy. The talk connects application-level evidence and enforceable conventions with parallel work and event-driven automation.",
+    "whySaved": [
+      "A practical framework for replacing repeated agent corrections with durable tooling and codebase improvements before scaling autonomous development."
+    ],
+    "highlights": [
+      "Verification skills combine a reusable CLI for running the application and collecting traces with a maintained feature map describing navigation and behavior. This helps agents interpret vague bug reports and test their work.",
+      "Engineering playbooks such as PStack complement correctness checks with development and debugging workflows.",
+      "Prefer preventing mistakes through architecture and data structures, then static analysis and CI; layer rules, review tooling, and skills on top rather than relying solely on human-enforced style guides.",
+      "Agents copy existing patterns, including workarounds. A codebase “gardener” should remove technical debt, maintain one conventional path, and add lint rules to prevent bad patterns spreading."
+    ]
+  },
+  {
     "id": "red-green-stacked-pr",
     "title": "不具合はCIに刻もう。「Red-Green Stacked PR」のすすめ",
     "kind": "article",

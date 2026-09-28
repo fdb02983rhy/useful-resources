@@ -345,6 +345,29 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "document-context-layer-jerry-liu",
+    "title": "Building the Document Context Layer for AI Agents — Jerry Liu, LlamaIndex",
+    "kind": "video",
+    "sourceUrl": "https://youtu.be/RQi7x-navxU?si=mUUgulQ-Xx9qhdgA",
+    "added": "2026-09-28",
+    "status": "reference",
+    "topics": [
+      "agentic-engineering",
+      "document-processing",
+      "retrieval-augmented-generation"
+    ],
+    "summary": "Jerry Liu discusses the document infrastructure needed to give general-purpose agents access to unstructured knowledge: document understanding, OCR, extraction, search, and specialized workflows. The talk frames this as a document context layer that remains useful as agent harnesses evolve.",
+    "whySaved": [
+      "A guide to the document-access capabilities surrounding an agent, beyond choosing a model or a retrieval framework."
+    ],
+    "highlights": [
+      "How agent retrieval changed between 2023 and 2026.",
+      "Why document OCR remains difficult and important for unlocking context.",
+      "Why agents need extraction and search tools alongside document parsing.",
+      "Emerging directions including agent-native document formats and specialized workflows exposed as tools."
+    ]
+  },
+  {
     "id": "dotenvx",
     "title": "dotenvx",
     "kind": "repository",

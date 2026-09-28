@@ -824,6 +824,29 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "openship",
+    "title": "OpenShip",
+    "kind": "repository",
+    "sourceUrl": "https://github.com/oblien/openship",
+    "added": "2026-09-28",
+    "status": "reference",
+    "topics": [
+      "software-development",
+      "deployment",
+      "self-hosting"
+    ],
+    "summary": "A self-hostable deployment platform combining builds, application processes, routing, TLS, and CI/CD through desktop, web, CLI, and programmatic interfaces.",
+    "whySaved": [
+      "A reference for managing deployments on your own infrastructure with a unified interface rather than assembling each operational component separately."
+    ],
+    "highlights": [
+      "Accepts repositories, local folders, or prebuilt artifacts; detects project configuration and supports container or supervised-process deployments.",
+      "The desktop controller deploys remotely over SSH or to Cloud. Push-to-deploy requires an always-on server or Cloud endpoint.",
+      "Includes deployment previews, rollbacks, database management, backups, domains, and automatic certificates; exposes an SDK, REST API, and permission-checked MCP tools.",
+      "Self-hosted Docker deployment mounts the host Docker socket, giving the control plane host-level privileges; the README calls for a trusted host."
+    ]
+  },
+  {
     "id": "ponytail",
     "title": "Ponytail",
     "kind": "tool",

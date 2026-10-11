@@ -156,6 +156,30 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "anatomy",
+    "title": "Anatomy",
+    "kind": "tool",
+    "sourceUrl": "https://skills.wheresryan.sh/anatomy",
+    "added": "2026-10-11",
+    "status": "reference",
+    "topics": [
+      "agentic-engineering",
+      "visualization",
+      "software-development"
+    ],
+    "summary": "Ryan's Claude Code skill turns an idea into an isometric machine whose behavior explains the concept. It produces code-based illustrations and interactive explainers using SVG, with optional WebGL effects and rotating 3D parts.",
+    "whySaved": [
+      "A reference for explaining technical concepts through working visual analogies, rather than static boxes and arrows.",
+      "Connects visual behavior, numeric readouts, and accessibility text to one model."
+    ],
+    "highlights": [
+      "Prompts name the concept; explicit interactive, WebGL, and 3D requests select richer behavior. Examples include queues, caches, hashing, and physical machines.",
+      "The workflow establishes facts and a shared model before geometry, then builds solid parts, depth ordering, interactions, and visual checks.",
+      "Output can be framework-free TypeScript generating SVG and HTML, or React components. The companion anatomy-figures package also offers custom elements.",
+      "Figures support keyboard interaction, reduced motion, and pausing off screen."
+    ]
+  },
+  {
     "id": "anthropic-scaling-test-impact-analysis",
     "title": "Agentic coding is straining CI. Here’s how we scaled test impact analysis at Anthropic",
     "kind": "article",

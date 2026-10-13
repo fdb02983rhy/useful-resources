@@ -964,6 +964,29 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "rea",
+    "title": "REA Reverse Engineer Anything",
+    "kind": "repository",
+    "sourceUrl": "https://github.com/morluto/rea",
+    "added": "2026-10-13",
+    "status": "reference",
+    "topics": [
+      "agentic-engineering",
+      "reverse-engineering",
+      "software-development"
+    ],
+    "summary": "REA connects agents to local reverse-engineering tools through MCP and a CLI. It returns findings, evidence, and limitations across native binaries, JavaScript and Electron apps, managed code, websites, and runtime observations.",
+    "whySaved": [
+      "A unified interface for investigating application behavior and tracing it through code, artifacts, and runtime evidence."
+    ],
+    "highlights": [
+      "Native analysis uses Hopper, Ghidra, or IDA. Static JavaScript and .NET inspection do not require a native analysis engine.",
+      "Additional workflows cover Android, firmware, Go and WASM artifacts, databases, saved network captures, and process behavior; prerequisites vary.",
+      "Setup registers the MCP server and matching workflow instructions with supported agents. Installing only the skill does not register the server.",
+      "Static JavaScript and .NET inspection read files without executing the app; runtime capture runs or interacts with targets using the user's permissions."
+    ]
+  },
+  {
     "id": "red-green-stacked-pr",
     "title": "不具合はCIに刻もう。「Red-Green Stacked PR」のすすめ",
     "kind": "article",

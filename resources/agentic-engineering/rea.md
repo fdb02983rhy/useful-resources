@@ -29,6 +29,8 @@ JavaScript and Electron apps, managed code, websites, and runtime observations.
   inspection do not require a native analysis engine.
 - Additional workflows cover Android, firmware, Go and WASM artifacts,
   databases, saved network captures, and process behavior; prerequisites vary.
+- The inspected revision also documents static inspection of GPU code objects,
+  model-artifact headers, Rust dependency metadata, and packaged Python apps.
 - Setup registers the MCP server and matching workflow instructions with
   supported agents. Installing only the skill does not register the server.
 - Static JavaScript and .NET inspection read files without executing the app;
@@ -45,6 +47,6 @@ untrusted targets before runtime analysis.
 ## Source
 
 [Repository](https://github.com/morluto/rea) ·
-[README](https://github.com/morluto/rea/blob/4773c152bc5f299fa682575bb8d1efea7587c7bc/README.md)
+[README](https://github.com/morluto/rea/blob/6d356b84344659085f2b912857b5e27fe0160c9b/README.md)
 
-Inspected commit: `4773c152bc5f299fa682575bb8d1efea7587c7bc`.
+Inspected commit: `6d356b84344659085f2b912857b5e27fe0160c9b`.

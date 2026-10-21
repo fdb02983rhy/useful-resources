@@ -392,6 +392,29 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "diagram-design",
+    "title": "Diagram Design",
+    "kind": "repository",
+    "sourceUrl": "https://github.com/cathrynlavery/diagram-design",
+    "added": "2026-10-21",
+    "status": "reference",
+    "topics": [
+      "agentic-engineering",
+      "visualization",
+      "design"
+    ],
+    "summary": "An agent skill for producing editorial-style diagrams as standalone HTML with inline SVG, using a consistent visual system and optional brand matching.",
+    "whySaved": [
+      "A reference for turning architecture, processes, and comparisons into portable publication graphics with explicit layout and styling constraints."
+    ],
+    "highlights": [
+      "The inspected README lists 45 diagram types, including architecture, sequences, data models, timelines, and charts, with light and dark variants.",
+      "Output opens directly in a browser and can be exported to SVG or PNG.",
+      "Existing Mermaid, draw.io, and Excalidraw diagrams can be redrawn; brand onboarding adapts palette and typography.",
+      "The README acknowledges model-dependent layout and recommends Mermaid for frequently changing diagrams maintained as source in Git. The license is MIT."
+    ]
+  },
+  {
     "id": "document-context-layer-jerry-liu",
     "title": "Building the Document Context Layer for AI Agents — Jerry Liu, LlamaIndex",
     "kind": "video",
@@ -871,6 +894,29 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "open-design",
+    "title": "OpenDesign",
+    "kind": "repository",
+    "sourceUrl": "https://github.com/nexu-io/open-design",
+    "added": "2026-10-21",
+    "status": "reference",
+    "topics": [
+      "agentic-engineering",
+      "design",
+      "frontend-development"
+    ],
+    "summary": "A collaborative AI design workspace that connects briefs, design systems, prototypes, media, and team feedback with coding-agent workflows.",
+    "whySaved": [
+      "A reference for organizing reusable design assets and agent-assisted iteration in one project, beyond a single interface-generation prompt."
+    ],
+    "highlights": [
+      "Studio supports interactive prototypes, presentations, generated images, and motion graphics, with previews and export workflows.",
+      "Design systems, templates, skills, and plugins can be inspected and adapted.",
+      "Integrations include skills, CLI and MCP access, native agent runtimes, and bring-your-own-key model endpoints.",
+      "The project describes itself as local-first, offers a cloud service, and uses the Apache-2.0 license."
+    ]
+  },
+  {
     "id": "openship",
     "title": "OpenShip",
     "kind": "repository",
@@ -1005,8 +1051,31 @@ export const resources: Resource[] = [
     "highlights": [
       "Native analysis uses Hopper, Ghidra, or IDA. Static JavaScript and .NET inspection do not require a native analysis engine.",
       "Additional workflows cover Android, firmware, Go and WASM artifacts, databases, saved network captures, and process behavior; prerequisites vary.",
-      "Setup registers the MCP server and matching workflow instructions with supported agents. Installing only the skill does not register the server.",
-      "Static JavaScript and .NET inspection read files without executing the app; runtime capture runs or interacts with targets using the user's permissions."
+      "The inspected revision also documents static inspection of GPU code objects, model-artifact headers, Rust dependency metadata, and packaged Python apps.",
+      "Setup registers the MCP server and matching workflow instructions with supported agents. Installing only the skill does not register the server."
+    ]
+  },
+  {
+    "id": "reactive-resume",
+    "title": "Reactive Resume",
+    "kind": "repository",
+    "sourceUrl": "https://github.com/reactive-resume/reactive-resume",
+    "added": "2026-10-21",
+    "status": "reference",
+    "topics": [
+      "productivity",
+      "career",
+      "self-hosting"
+    ],
+    "summary": "An open-source resume builder with document editing, customization, resume checks, cover letters, and job-application tracking. It offers hosted and self-hosted deployment paths.",
+    "whySaved": [
+      "A practical reference for maintaining tailored career documents and application records with portable exports and control over hosting."
+    ],
+    "highlights": [
+      "The inspected README describes live PDF previews, templates, custom sections, document versions, readability checks, and job-posting keyword matching.",
+      "Import supports several document formats; export includes PDF, DOCX, Markdown, and JSON. Some import and writing features require a connected AI provider.",
+      "Optional AI suggestions can be accepted or rejected. REST and MCP interfaces expose document and application workflows.",
+      "Sharing includes public links and optional passwords. Self-hosting options include Docker and cloud deployments. The project is MIT-licensed."
     ]
   },
   {

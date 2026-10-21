@@ -299,6 +299,29 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "consistent-frontend-stack-prompt",
+    "title": "Consistent Frontend Stack Prompt",
+    "kind": "note",
+    "sourceUrl": "https://x.com/jakevin7/status/2112244985156481059",
+    "added": "2026-10-21",
+    "status": "reference",
+    "topics": [
+      "software-development",
+      "frontend",
+      "agentic-engineering"
+    ],
+    "summary": "卡比卡比 (@jakevin7) recommends constraining frontend generation with a coherent design language and explicitly chosen libraries. Reuse mature implementations, retain control of component source, and limit dependencies with overlapping roles.",
+    "whySaved": [
+      "A compact checklist for making frontend prompts more specific and consistent."
+    ],
+    "highlights": [
+      "Prefer mature libraries and editable component source over repeated reinvention.",
+      "Specify one visual style and consistent choices for icons, animation, layout, drag-and-drop, and state management.",
+      "Examples given are shadcn/ui Nova, Lucide, Motion, react-resizable-panels, dnd-kit, and Zustand; these are illustrative choices rather than a universal stack.",
+      "The author reports that explicit choices can improve one-shot frontend output."
+    ]
+  },
+  {
     "id": "database-design-course",
     "title": "Database Design Course",
     "kind": "video",

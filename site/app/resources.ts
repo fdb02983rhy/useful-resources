@@ -1339,6 +1339,29 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "ub-mode",
+    "title": "ub-mode",
+    "kind": "repository",
+    "sourceUrl": "https://github.com/unclebob/ub-mode",
+    "added": "2026-10-28",
+    "status": "reference",
+    "topics": [
+      "agentic-engineering",
+      "software-development",
+      "testing"
+    ],
+    "summary": "An agent skill that combines software-engineering practices with deterministic quality checks. Its workflow moves from making code work to improving its design and tests, with small, verifiable changes and ongoing operational discipline.",
+    "whySaved": [
+      "A reference for connecting coding-agent instructions to measurable quality checks rather than relying only on prose guidelines."
+    ],
+    "highlights": [
+      "The rules are loosely adapted from parts of poteto-mode / pstack and emphasize TDD, questioning assumptions, domain modeling, boundaries, and refactoring.",
+      "Crapper measures complexity and coverage to target a per-function CRAP score below 10. Dryer flags structurally similar code at a similarity of 0.8 or above.",
+      "Mutator uses mutation testing to identify uncovered code and surviving mutants; UML Viewer visualizes components, quality metrics, and dependency directions.",
+      "Practice guidance includes logging, context management, worktree cleanup, and small ordered commits. The README describes installing the skill by copying its SKILL.md into an agent's skills directory."
+    ]
+  },
+  {
     "id": "uber-efficient-software-factory",
     "title": "Running a Software Factory Efficiently at Uber Scale",
     "kind": "article",

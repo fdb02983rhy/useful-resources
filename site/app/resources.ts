@@ -655,6 +655,29 @@ export const resources: Resource[] = [
     "highlights": []
   },
   {
+    "id": "impeccable",
+    "title": "Impeccable",
+    "kind": "repository",
+    "sourceUrl": "https://github.com/pbakaus/impeccable",
+    "added": "2026-10-29",
+    "status": "reference",
+    "topics": [
+      "agentic-engineering",
+      "frontend-development",
+      "design"
+    ],
+    "summary": "Design guidance and tooling for AI coding agents, combining a reusable skill, focused design commands, browser iteration, and deterministic frontend checks.",
+    "whySaved": [
+      "A reference for turning design critique into targeted changes and repeatable checks across an agent-assisted frontend workflow."
+    ],
+    "highlights": [
+      "The inspected README lists one skill, 24 commands, and 62 deterministic detector rules. Commands cover planning, critique, polish, layout, typography, accessibility audits, and edge-case handling.",
+      "Setup records product context in PRODUCT.md separately from visual-system decisions in DESIGN.md. Deterministic detection needs no LLM or API key.",
+      "Live editing works against local projects, not deployed production sites; production URLs can be inspected without writing back to source.",
+      "Hooks can run detectors after edits and download an engine on first use. Design-roll telemetry has opt-outs through DO_NOT_TRACK=1, IMPECCABLE_NO_TELEMETRY=1, or project configuration. The license is Apache-2.0."
+    ]
+  },
+  {
     "id": "inside-openais-in-house-data-agent",
     "title": "Inside OpenAI's in-house data agent",
     "kind": "article",

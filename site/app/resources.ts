@@ -322,6 +322,29 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "dan-koe-one-day-life-reset",
+    "title": "How to fix your entire life in 1 day",
+    "kind": "article",
+    "sourceUrl": "https://x.com/thedankoe/status/2010751592346030461",
+    "added": "2026-11-02",
+    "status": "reference",
+    "topics": [
+      "productivity",
+      "personal-development",
+      "goal-setting"
+    ],
+    "summary": "Dan Koe's essay connects identity, goals, and behavioral feedback to a one-day reflection exercise. It proposes examining unwanted patterns, defining a desired direction, and translating that direction into projects and daily actions.",
+    "whySaved": [
+      "A structured reference for periodic personal reviews that connect long-term intentions with observable behavior and concrete next steps."
+    ],
+    "highlights": [
+      "Koe argues that lasting change involves identity and underlying motives, rather than resolutions or discipline alone. He draws on developmental models and a feedback-loop view of learning and action.",
+      "The exercise moves from morning reflection on dissatisfaction and possible futures, through daytime interruptions of habitual behavior, to evening synthesis and planning.",
+      "The resulting plan combines an unwanted future, a desired future, a yearly goal, a monthly project, daily priorities, and limits on acceptable sacrifices.",
+      "The closing game analogy frames projects as challenges and daily actions as quests. The author explicitly does not guarantee the exercise works for everyone."
+    ]
+  },
+  {
     "id": "database-design-course",
     "title": "Database Design Course",
     "kind": "video",

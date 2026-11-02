@@ -391,6 +391,29 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "deepseek-super-agent-design",
+    "title": "Exploring Super-agent Design: Towards a More Autonomous Agent System",
+    "kind": "article",
+    "sourceUrl": "https://x.com/deepseekharness/status/2116857257245987236",
+    "added": "2026-11-02",
+    "status": "reference",
+    "topics": [
+      "agentic-engineering",
+      "system-design",
+      "multi-agent-systems"
+    ],
+    "summary": "An architectural exploration of always-online agents that maintain continuity across channels while handling independent tasks concurrently. It applies distributed-systems ideas to routing, context, execution, and recovery rather than treating each user conversation as a separate execution session.",
+    "whySaved": [
+      "A reference for designing persistent agent services around human attention, concurrent tasks, and explicit operational boundaries."
+    ],
+    "highlights": [
+      "A long-lived Router coordinates tasks and human communication; isolated Workers execute them. The Router avoids doing task work itself.",
+      "Deterministic filters precede semantic event decisions. Thread subscriptions pass follow-up events directly to Workers; compact context and linked object references support on-demand retrieval through Chain of Recall.",
+      "Asynchronous tools keep conversation responsive. Compute, durable state, and execution environments are separated; an external Watchdog checks both infrastructure health and meaningful task progress.",
+      "Preliminary synthetic experiments trade greater token use for more stable completion times. Coding is simulated, so they measure scheduling rather than code quality. Scaling, long-term memory, permissions, and privacy remain open."
+    ]
+  },
+  {
     "id": "demystifying-evals-for-ai-agents",
     "title": "Demystifying evals for AI agents",
     "kind": "article",

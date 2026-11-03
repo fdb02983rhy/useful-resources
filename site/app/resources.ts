@@ -1312,6 +1312,29 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "stack-diagram",
+    "title": "stack-diagram",
+    "kind": "repository",
+    "sourceUrl": "https://github.com/caru-ini/stack-diagram",
+    "added": "2026-11-04",
+    "status": "reference",
+    "topics": [
+      "agentic-engineering",
+      "visualization",
+      "system-design"
+    ],
+    "summary": "An agent skill for turning natural-language descriptions of technology stacks into architecture diagrams with brand logos, grouped components, and connections. Examples cover application infrastructure, developer tooling, and cloud services.",
+    "whySaved": [
+      "A reference for producing portable architecture illustrations from a concise description, with consistent light and dark versions."
+    ],
+    "highlights": [
+      "Default output is self-contained HTML with embedded fonts and logos. PNG, dependency-free React components, and artifact workflows are also supported.",
+      "Logos are fetched from icon collections or vendor sources, without recoloring or redrawing. AWS, Google Cloud, and Azure use vendor icon packages.",
+      "The workflow routes lines around labels and renders the diagram for inspection. It requires Python 3.9+ and network access for logos; PNG export uses Playwright with Chromium.",
+      "Optional public-gallery submission requires two confirmations and publishes images, a title, stack details, and a display name. The README says the prompt is not sent. Code and documentation are MIT-licensed; other assets have their own licensing and trademark conditions."
+    ]
+  },
+  {
     "id": "stanford-cs336-language-modeling-from-scratch",
     "title": "Stanford CS336: Language Modeling from Scratch",
     "kind": "course",

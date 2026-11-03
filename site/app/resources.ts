@@ -1102,6 +1102,29 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "protocol-explorer",
+    "title": "Protocol Explorer",
+    "kind": "tool",
+    "sourceUrl": "https://protocol-explorer-alpha.vercel.app/",
+    "added": "2026-11-04",
+    "status": "reference",
+    "topics": [
+      "networking",
+      "visualization",
+      "computer-science"
+    ],
+    "summary": "A browser-based educational resource for understanding internet protocols through interactive lessons and packet-by-packet explanations. Its public description emphasizes decoding packet contents byte by byte.",
+    "whySaved": [
+      "A visual companion to networking study that connects protocol names with message exchanges and packet structure."
+    ],
+    "highlights": [
+      "Listed topics include HTTP, HTTPS, TCP, UDP, IP, DNS, DHCP, ICMP, SMTP, POP3, IMAP, FTP, SSH, and TLS.",
+      "The page describes animations showing packets travelling through a network; JavaScript is required to run the lessons.",
+      "Metadata lists multiple languages, including English, Japanese, Simplified Chinese, and Traditional Chinese, and identifies the application as free.",
+      "The site's HTML credits Dilum Sanjaya as its author."
+    ]
+  },
+  {
     "id": "rari-harness-engineering",
     "title": "Harness Engineering: How to Build AI Agents That Don't Fall Apart",
     "kind": "article",

@@ -322,6 +322,29 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "critical-thinking-when-agents-do-the-work",
+    "title": "Critical thinking when agents do the work",
+    "kind": "article",
+    "sourceUrl": "https://x.com/addyosmani/status/2117512471930167377",
+    "added": "2026-11-03",
+    "status": "reference",
+    "topics": [
+      "agentic-engineering",
+      "software-development",
+      "critical-thinking"
+    ],
+    "summary": "Addy Osmani argues that delegating execution to agents should not mean giving up judgment or accountability. The essay proposes deliberate habits for framing tasks, verifying evidence, reviewing decisions, and preserving essential skills.",
+    "whySaved": [
+      "A practical review checklist for maintaining ownership when agents produce work faster than a person can inspect it."
+    ],
+    "highlights": [
+      "Osmani distinguishes useful cognitive offloading from deferring to outputs and eventually accepting them without understanding or checking them.",
+      "Form a hypothesis before asking, seek counterarguments, and define completion evidence upfront. Examine what a passing check proves and what it misses.",
+      "Review assumptions and decisions, not just polished summaries or diffs; reconstruct relevant understanding and sample original sources when needed.",
+      "Write clear briefs with constraints and acceptance criteria, limit work to review capacity, and deliberately practice skills worth retaining. Execution and auditing can be delegated, but accountability remains with people."
+    ]
+  },
+  {
     "id": "dan-koe-one-day-life-reset",
     "title": "How to fix your entire life in 1 day",
     "kind": "article",

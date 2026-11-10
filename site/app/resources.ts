@@ -1632,9 +1632,9 @@ export const resources: Resource[] = [
     ],
     "highlights": [
       "The rules are loosely adapted from parts of poteto-mode / pstack and emphasize TDD, questioning assumptions, domain modeling, boundaries, and refactoring.",
-      "Crapper measures complexity and coverage to target a per-function CRAP score below 10. Dryer flags structurally similar code at a similarity of 0.8 or above.",
-      "Mutator uses mutation testing to identify uncovered code and surviving mutants; UML Viewer visualizes components, quality metrics, and dependency directions.",
-      "Practice guidance includes logging, context management, worktree cleanup, and small ordered commits. The README describes installing the skill by copying its SKILL.md into an agent's skills directory."
+      "The skill asks for the smallest useful change, data modeling before logic, validation at entry boundaries, idempotent operations, and isolated mutable state or a structurally enforced single writer.",
+      "TDD guidance requires observing the expected failure before implementing a fix, but discourages contrived tests when an honest test is impractical. Refactoring should preserve behavior, checked through user-visible outcomes.",
+      "Crapper measures complexity and coverage to target a per-function CRAP score below 10. Dryer flags structurally similar code at a similarity of 0.8 or above."
     ]
   },
   {

@@ -27,6 +27,12 @@ and tests, with small, verifiable changes and ongoing operational discipline.
 
 - The rules are loosely adapted from parts of poteto-mode / pstack and emphasize
   TDD, questioning assumptions, domain modeling, boundaries, and refactoring.
+- The skill asks for the smallest useful change, data modeling before logic,
+  validation at entry boundaries, idempotent operations, and isolated mutable
+  state or a structurally enforced single writer.
+- TDD guidance requires observing the expected failure before implementing a fix,
+  but discourages contrived tests when an honest test is impractical. Refactoring
+  should preserve behavior, checked through user-visible outcomes.
 - Crapper measures complexity and coverage to target a per-function CRAP score
   below 10. Dryer flags structurally similar code at a similarity of 0.8 or above.
 - Mutator uses mutation testing to identify uncovered code and surviving mutants;
@@ -40,11 +46,16 @@ and tests, with small, verifiable changes and ongoing operational discipline.
 Useful as an opinionated quality-control checklist. Metric thresholds are this
 project's policy, not proof of correctness or suitable universal targets. Check
 companion-tool support and test cost for the intended language and codebase.
-This note reviews the README; the skill and tools were not installed or tested.
+The skill also prescribes logging every action, careful worktree cleanup, and
+pushing to the main line; these are its workflow preferences, not authorization
+to override a repository's permissions or contribution rules. This note reviews
+the README and SKILL.md; the skill and tools were not installed or tested.
 
 ## Source
 
 [Repository](https://github.com/unclebob/ub-mode) ·
-[Inspected README](https://github.com/unclebob/ub-mode/blob/57a8bdd28e45ed41900ace0bafa2ff76dd9ed70f/README.md)
+[Submitted skill](https://github.com/unclebob/ub-mode/blob/master/SKILL.md) ·
+[Inspected skill](https://github.com/unclebob/ub-mode/blob/3da62bf3fcfd2034de41f30d920d2739e566171f/SKILL.md) ·
+[Inspected README](https://github.com/unclebob/ub-mode/blob/3da62bf3fcfd2034de41f30d920d2739e566171f/README.md)
 
-Inspected commit: `57a8bdd28e45ed41900ace0bafa2ff76dd9ed70f`.
+Inspected commit: `3da62bf3fcfd2034de41f30d920d2739e566171f`.

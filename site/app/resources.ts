@@ -228,6 +228,29 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "artex-global",
+    "title": "ARTEX — Global Edition",
+    "kind": "repository",
+    "sourceUrl": "https://github.com/jiwoochris/artex-global",
+    "added": "2026-11-10",
+    "status": "reference",
+    "topics": [
+      "security",
+      "agentic-engineering"
+    ],
+    "summary": "A multilingual edition of ARTEX, an LLM multi-agent penetration-testing system with a Go backend, embedded Next.js interface, and PostgreSQL storage.",
+    "whySaved": [
+      "An architecture reference for agent planning, tool execution, evidence graphs, and human oversight in security testing.",
+      "Includes defensive and detection material alongside the testing platform."
+    ],
+    "highlights": [
+      "Agents decompose goals, execute tools, and accumulate discovered assets and findings in graphs, with human-in-the-loop interaction.",
+      "Separates a shared asset graph from per-task exploration graphs, connecting assets to goals, evidence, and findings.",
+      "Supports English, Korean, Chinese, Spanish, and Japanese user-facing output while retaining the original internal reasoning prompts.",
+      "Includes a traffic-recording proxy, tool approval gate, and reporting features."
+    ]
+  },
+  {
     "id": "bend",
     "title": "Bend 2",
     "kind": "tool",
@@ -272,6 +295,54 @@ export const resources: Resource[] = [
       "/claude-api prompt-audit targets redundant verification rituals, excessive thoroughness, mandatory reasoning scaffolds, contradictions, and obsolete settings when migrating models.",
       "/claude-api hillclimb searches model, effort, and prompt configurations using training cases, then scores the result on held-out tests.",
       "/claude-api cost-optimize profiles spend from reports, logs, or code estimates; considers caching, batching, and bounded output; and measures model/effort tradeoffs when an evaluation is supplied."
+    ]
+  },
+  {
+    "id": "claude-security-plugin",
+    "title": "Claude Security Plugin",
+    "kind": "repository",
+    "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-security",
+    "added": "2026-11-10",
+    "status": "reference",
+    "topics": [
+      "security",
+      "agentic-engineering",
+      "software-development"
+    ],
+    "summary": "A Claude Code plugin for in-session security research: mapping architecture, building a threat model, hunting vulnerabilities, independently verifying candidates, and optionally preparing patches for human review.",
+    "whySaved": [
+      "A reference for evidence-based agent security reviews of codebases or changes.",
+      "Shows how independent verification and reviewable artifacts fit into an audit."
+    ],
+    "highlights": [
+      "Supports codebase and change-focused reviews; produces Markdown, JSONL, and SARIF reports with revision information, confidence, and exploitation conditions.",
+      "Independent verifiers try to disprove candidate findings before reporting them.",
+      "Optional patches are prepared and reviewed separately, not automatically applied, committed, or pushed. Reports note when project tests did not exercise a patch.",
+      "Runs under existing session permissions and adds no isolation. Repository hooks, settings, and instructions remain active. Credential redaction is best effort."
+    ]
+  },
+  {
+    "id": "cloudflare-security-audit",
+    "title": "Cloudflare Security Audit Skill",
+    "kind": "repository",
+    "sourceUrl": "https://github.com/cloudflare/security-audit-skill",
+    "added": "2026-11-10",
+    "status": "reference",
+    "topics": [
+      "security",
+      "agentic-engineering",
+      "software-development"
+    ],
+    "summary": "A coding-agent skill for structured repository security audits, combining reconnaissance, coverage-led investigation, candidate validation, independent verification, and structured reporting.",
+    "whySaved": [
+      "A concrete design for tracking audit coverage and evidence across repeated runs.",
+      "Separates confirmed vulnerabilities from unresolved leads and rejected candidates."
+    ],
+    "highlights": [
+      "Derived from Cloudflare's vulnerability-discovery harness as a single-repository starting point, rather than the complete fleet-scale harness.",
+      "Records architecture and a coverage ledger; subsequent runs target gaps and revalidate changed code rather than counting stale work as covered.",
+      "Fresh verification attempts to disprove candidates. Confirmed findings require a complete source trace and bounded observed result; unresolved candidates use needs_validation without severity.",
+      "Produces schema-validated findings and separate report, finding-detail, and needs-validation documents. Output defaults outside the audited repository."
     ]
   },
   {
@@ -458,6 +529,28 @@ export const resources: Resource[] = [
       "Prefer deterministic grading when outcomes permit it, and combine code, model, and human graders according to the task.",
       "Capability suites should remain difficult enough to show progress; regression suites should be near-perfect so they expose backsliding.",
       "pass@k measures whether at least one of several trials succeeds, while pass^k measures whether all trials succeed consistently."
+    ]
+  },
+  {
+    "id": "dependencytrack",
+    "title": "OWASP Dependency-Track",
+    "kind": "collection",
+    "sourceUrl": "https://github.com/DependencyTrack",
+    "added": "2026-11-10",
+    "status": "reference",
+    "topics": [
+      "security",
+      "software-development"
+    ],
+    "summary": "The GitHub organization for OWASP Dependency-Track, a platform for continuous SBOM analysis intended to identify and reduce software supply-chain risk.",
+    "whySaved": [
+      "A central entry point to the platform and its deployment and integration ecosystem.",
+      "Complements SBOM generation with ongoing component-risk analysis."
+    ],
+    "highlights": [
+      "The organization describes Dependency-Track as a continuous SBOM analysis platform.",
+      "Pinned projects include the main platform, frontend, documentation, community resources, Helm charts, and a Go client.",
+      "The organization also maintains a GitHub Action for uploading SBOMs."
     ]
   },
   {
@@ -1379,6 +1472,29 @@ export const resources: Resource[] = [
       "Assignment 1 implements a tokenizer, Transformer architecture, optimizer, and minimal training run.",
       "Later assignments cover profiling and Triton FlashAttention2, memory-efficient distributed training, scaling laws, Common Crawl filtering and deduplication, and supervised fine-tuning plus reinforcement learning for math reasoning.",
       "The course assumes strong Python and software-engineering ability, PyTorch and systems-optimization experience, linear algebra, probability, and prior machine learning or deep-learning knowledge."
+    ]
+  },
+  {
+    "id": "syft",
+    "title": "Syft",
+    "kind": "repository",
+    "sourceUrl": "https://github.com/anchore/syft",
+    "added": "2026-11-10",
+    "status": "reference",
+    "topics": [
+      "security",
+      "developer-tools"
+    ],
+    "summary": "Anchore's CLI and Go library for generating software bills of materials (SBOMs) from container images, filesystems, and archives.",
+    "whySaved": [
+      "Creates a portable inventory of software components for supply-chain workflows.",
+      "Provides standard outputs that can feed downstream analysis and scanning tools."
+    ],
+    "highlights": [
+      "Supports numerous operating-system and language package ecosystems, including Debian, RPM, Go, Python, JavaScript, Java, and Rust.",
+      "Exports CycloneDX, SPDX, and Syft JSON, with format conversion and multiple outputs per invocation.",
+      "Supports signed SBOM attestations using the in-toto specification.",
+      "Integrates with Grype for vulnerability scanning; released under Apache-2.0."
     ]
   },
   {

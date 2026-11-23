@@ -251,6 +251,29 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "aws-reverse-spec-flow",
+    "title": "AWS Reverse Spec Flow introduction",
+    "kind": "article",
+    "sourceUrl": "https://aws.amazon.com/jp/blogs/news/aidm-introducing-reverse-spec-flow/",
+    "added": "2026-11-23",
+    "status": "reference",
+    "topics": [
+      "agentic-engineering",
+      "software-development",
+      "modernization"
+    ],
+    "summary": "An AWS Japan article introducing Reverse Spec Flow (RSF), a workflow for turning existing application code into specifications that AI agents can use for maintenance and rebuilding.",
+    "whySaved": [
+      "A reference for recovering business rules from legacy systems while keeping specification claims traceable to source code."
+    ],
+    "highlights": [
+      "Five phases cover intake at a fixed commit, code graph creation, analysis, specification writing, and independent auditing, with human checkpoints.",
+      "Claims link to code locations and are checked by a separate AI verifier; unverified behavior remains UNKNOWN. Coverage checks use the code graph and gates.sh rather than relying on an agent's completion statement.",
+      "Specifications separate implementation facts from technology-independent business behavior and include indexes for targeted agent retrieval.",
+      "Analysis is static: runtime behavior still needs acceptance and regression testing, and audits do not guarantee error-free specifications."
+    ]
+  },
+  {
     "id": "bend",
     "title": "Bend 2",
     "kind": "tool",
@@ -1684,6 +1707,29 @@ export const resources: Resource[] = [
       "For a uniform conventional attention stack, ideal per-sequence cache payload is 2 × layers × cached_tokens × kv_heads × head_dimension × bytes_per_element. Actual allocation also includes runtime overhead and model-specific details.",
       "MQA and GQA reduce the number of KV heads; MLA uses a compressed latent representation with separate positional considerations.",
       "PagedAttention manages cache placement in blocks. Prefix caching reuses compatible prefill state across requests; offloading trades transfers against recomputation; quantization trades numerical precision for smaller state."
+    ]
+  },
+  {
+    "id": "vercel-ui-sdk",
+    "title": "Vercel UI SDK",
+    "kind": "repository",
+    "sourceUrl": "https://github.com/vercel-labs/ui",
+    "added": "2026-11-23",
+    "status": "reference",
+    "topics": [
+      "frontend-development",
+      "agentic-engineering",
+      "accessibility"
+    ],
+    "summary": "A library of reusable interface behaviors intended for agents building user interfaces, with a shared core and adapters for multiple frontend frameworks.",
+    "whySaved": [
+      "A reference for composing interactive UI primitives with keyboard and focus behavior across frameworks in an agent-assisted development workflow."
+    ],
+    "highlights": [
+      "@ui-sdk/core provides keyboard navigation, focus, selection, dismissal, popups, drag and drop, and associated ARIA behavior.",
+      "Adapters support React, Vue, Svelte, Solid, and Web Components. Primitives combine behaviors and expose renderable parts through createParts.",
+      "The README documents installation of the core and framework adapter, plus an agent skill via npx skills@latest add vercel-labs/ui --skill ui-sdk.",
+      "The project is in beta; APIs, documentation, and behavior may change."
     ]
   },
   {

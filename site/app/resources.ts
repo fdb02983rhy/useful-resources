@@ -1125,6 +1125,28 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "openai-shirudo-announcement",
+    "title": "OpenAI and Cisco introduce Shirudo",
+    "kind": "web",
+    "sourceUrl": "https://x.com/openai/status/2124980590717911527",
+    "added": "2026-11-24",
+    "status": "reference",
+    "topics": [
+      "security",
+      "agentic-engineering",
+      "linux"
+    ],
+    "summary": "An announcement of Shirudo, an open-source Linux runtime from OpenAI and Cisco for applying temporary eBPF protections while teams prepare permanent patches.",
+    "whySaved": [
+      "A reference for agent-assisted runtime defense and protecting services during the gap between vulnerability discovery and patch deployment."
+    ],
+    "highlights": [
+      "The official companion article describes eBPF shields that protect running systems, with operator approval before deployment and monitoring before enforcement.",
+      "Shields are signed and verified; TPM-backed records help operators verify protections being loaded or removed.",
+      "OpenAI reports a controlled test in which a Codex-generated shield blocked a Java4Shell exploit attempt against Elasticsearch without restarting the service."
+    ]
+  },
+  {
     "id": "openship",
     "title": "OpenShip",
     "kind": "repository",
@@ -1589,6 +1611,28 @@ export const resources: Resource[] = [
       "The Temporal CLI can start a local development server and inspect namespaces and workflows; the Web UI provides workflow visibility.",
       "The README links SDK guidance, Go and Java samples, server architecture, contribution instructions, and testing documentation.",
       "The server repository is MIT-licensed."
+    ]
+  },
+  {
+    "id": "togg53192-jailbreaks",
+    "title": "Jailbreaks prompt collection",
+    "kind": "repository",
+    "sourceUrl": "https://github.com/togg53192-cmd/jailbreaks",
+    "added": "2026-11-24",
+    "status": "reference",
+    "topics": [
+      "security",
+      "artificial-intelligence",
+      "agentic-engineering"
+    ],
+    "summary": "A repository collecting model-targeted prompts, persona definitions, workspace policies, agent instruction files, and harness configuration examples.",
+    "whySaved": [
+      "A reference collection for examining instruction conflicts, persona framing, and prompt manipulation across model and agent instruction surfaces."
+    ],
+    "highlights": [
+      "The README groups material by model family and provider, spanning open-weight, closed, and stealth models.",
+      "Formats include system prompts, AGENTS.md files, persistent workspace policies, configuration blocks, and Ollama Modelfiles.",
+      "The maintainers describe the collection as research and educational material and note that behavior depends on model versions and changing instruction systems."
     ]
   },
   {

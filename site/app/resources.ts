@@ -1614,6 +1614,27 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "the-last-boring-slide",
+    "title": "The Last Boring Slide",
+    "kind": "web",
+    "sourceUrl": "https://x.com/fluxxrider/status/2125622238481371372",
+    "added": "2026-11-25",
+    "status": "reference",
+    "topics": [
+      "agentic-engineering",
+      "frontend-development",
+      "presentations"
+    ],
+    "summary": "A post by Nikita (@fluxxrider) sharing a Claude Artifact presentation titled The Last Boring Slide. Its link preview describes a talk about the intelligence explosion that begins as a plain slide and then starts editing itself.",
+    "whySaved": [
+      "A reference for interactive presentation ideas and model-assisted frontend demonstrations, with the original post and runnable artifact kept together."
+    ],
+    "highlights": [
+      "The author praises Opus 5.6 and invites readers to try the linked artifact. This is a personal assessment, not a benchmark result.",
+      "The artifact's link-preview description lists arrow-key navigation, A for automatic playback, and F for fullscreen."
+    ]
+  },
+  {
     "id": "togg53192-jailbreaks",
     "title": "Jailbreaks prompt collection",
     "kind": "repository",

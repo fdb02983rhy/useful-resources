@@ -746,6 +746,24 @@ export const resources: Resource[] = [
     ]
   },
   {
+    "id": "hackllm-jailbreaks",
+    "title": "HackLLM Jailbreaks",
+    "kind": "collection",
+    "sourceUrl": "https://www.hackllm.biz/jailbreaks",
+    "added": "2026-11-28",
+    "status": "reference",
+    "topics": [
+      "security",
+      "artificial-intelligence",
+      "agentic-engineering"
+    ],
+    "summary": "A browsable prompt archive organized by model family, version, and topic, with model-specific and universal instruction collections.",
+    "whySaved": [
+      "A reference for comparing prompt framing and agent instruction formats across models through a searchable catalog."
+    ],
+    "highlights": []
+  },
+  {
     "id": "herdr",
     "title": "Herdr",
     "kind": "tool",
